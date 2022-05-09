@@ -1,0 +1,182 @@
+<html lang="ja">
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"
+  >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>応募フォーム | 株式会社イトナブ 採用サイト</title>
+
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon" />
+
+    <meta property="og:url" content="https://recruit.itnav.co.jp/entry/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://recruit.itnav.co.jp/assets/image/ogp.png"
+    />
+    <meta
+      property="og:title"
+      content="応募フォーム | 株式会社イトナブ 採用サイト"
+    />
+
+    <link rel="stylesheet" href="style.scss" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QNNDC4DNHJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QNNDC4DNHJ");
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="headerMenu" class="menu-elm flex">
+        <a href="/" class="logo flex">
+          <div class="img">
+            <img src="../img/itnav-logo.png" />
+          </div>
+          <div class="text">採用情報サイト</div>
+        </a>
+
+        <div id="headerBtn" class="menu-btn flex">
+          <div class="line">
+            <div class="line-item"></div>
+            <div class="line-item"></div>
+            <div class="line-item"></div>
+          </div>
+        </div>
+
+        <nav class="flex">
+          <a class="nav-link" href="index.html">TOP</a>
+          <a class="nav-link" href="itnavte.html">イトナブって</a>
+          <a class="nav-link" href="member.html">メンバーにきいてみた</a>
+          <a class="nav-link" href="goodpoint.html">イトナブのいいところ</a>
+          <a class="nav-link" href="information.html">採用情報</a>
+          <a class="link-entry" href="entry.html">ENTRY</a>
+        </nav>
+      </div>
+      <div class="mark-elm">
+        <div class="mark-item">ITNAV RECRUIT SITE</div>
+        <div class="mark-item">ITNAV RECRUIT SITE</div>
+      </div>
+    </header>
+
+    <main class="entry-page">
+      <section class="page-fv">
+        <div class="float">
+          <ul class="breadcrumbs flex">
+            <li><a href="index.html">TOP</a></li>
+            <li>応募フォーム</li>
+          </ul>
+          <div class="fv-title">
+            <img src="../img/entry-title.png" />
+          </div>
+        </div>
+        <img class="page-fv-img" src="../img/sraide2.jpg" />
+      </section>
+
+      <section class="page-title">
+        <div class="container center">
+          <h1 class="center">
+            <div class="en">ENTRY</div>
+            <div class="ja center">応募フォーム</div>
+          </h1>
+        </div>
+      </section>
+
+      <section class="entry">
+        <form action="/entry/confirm/" class="container center">
+          <div class="form-chunk">
+            <label class="is-required" for="name">お名前</label>
+            <input id="name" type="text" name="お名前" required />
+          </div>
+          <div class="form-chunk">
+            <label class="is-required" for="kana">ふりがな</label>
+            <input
+              id="kana"
+              type="text"
+              pattern="[\u3041-\u3096]*"
+              name="ふりがな"
+              required
+            />
+          </div>
+          <div class="form-chunk">
+            <label class="is-required" for="email">メールアドレス</label>
+            <input id="email" type="email" name="メールアドレス" required />
+          </div>
+
+          <div id="scheduleContent" class="schedule-content"></div>
+
+          <div class="form-chunk">
+            <label for="position">希望するポジション</label>
+            <select
+              id="position"
+              class="drop-down clickable"
+              name="希望するポジション"
+            >
+              <option selected disabled>選択してください</option>
+              <option>エンジニア</option>
+              <option>セールス</option>
+            </select>
+          </div>
+          <div class="form-chunk">
+            <label for="other">簡単なプロフィール・ご質問など</label>
+            <textarea
+              id="other"
+              name="簡単なプロフィール・ご質問など"
+            ></textarea>
+          </div>
+
+          <div class="entry-submit center clickable">
+            <span class="ja"><input type="submit" value="確認" /></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-body">
+        <div class="footer-body-wrapper center">
+          <div class="menu flex">
+            <div class="logo flex">
+              <div class="img">
+                <img src="../img/itnav-logo.png" />
+              </div>
+              <div class="text">採用情報サイト</div>
+            </div>
+            <div class="addr-sp">
+              一般社団法人イトナブ石巻　│　株式会社イトナブ<br />〒986-0854
+              宮城県石巻市大街道北1-1-16 かじやビル2F
+            </div>
+            <nav class="flex">
+              <a href="index.html">TOP</a>
+              <a href="itnavte.html">イトナブって</a>
+              <a href="member.html">メンバーにきいてみた</a>
+              <a href="goodpoint.html">イトナブのいいところ</a>
+              <a href="information.html">採用情報</a>
+            </nav>
+          </div>
+
+          <div class="info flex">
+            <div class="addr-pc">
+              一般社団法人イトナブ石巻　│　株式会社イトナブ　　〒986-0854
+              宮城県石巻市大街道北1-1-16 かじやビル2F
+            </div>
+            <div class="rights">© イトナブ All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="entry.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </body>
+</html>
