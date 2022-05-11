@@ -80,6 +80,30 @@ input[type="button"] {
   border-radius: 0;
 }
 
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 100 900;
+  src: url(/assets/font/NotoSansJP-VF.woff) format("woff-variations");
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 700;
+  src: url(/assets/font/Rajdhani-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  src: url(/assets/font/Rajdhani-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 500;
+  src: url(/assets/font/Rajdhani-Medium.ttf);
+}
+
 * {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
@@ -1458,6 +1482,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .interview::after {
   z-index: -1;
+  background-image: url(/assets/image/top-interview-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
@@ -1604,6 +1629,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .goodpoint .content {
   background-color: rgba(42, 188, 143, 0.07);
+  background-image: url(/assets/image/top-goodpoint-bg.png);
   background-size: 21px 20px;
   padding-top: 70px;
   padding-bottom: 64px;

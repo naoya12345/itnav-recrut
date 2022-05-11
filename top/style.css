@@ -81,6 +81,30 @@ input[type="button"] {
   border-radius: 0;
 }
 
+@font-face {
+  font-family: "Noto Sans JP";
+  font-weight: 100 900;
+  src: url(/assets/font/NotoSansJP-VF.woff) format("woff-variations");
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 700;
+  src: url(/assets/font/Rajdhani-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 600;
+  src: url(/assets/font/Rajdhani-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  font-weight: 500;
+  src: url(/assets/font/Rajdhani-Medium.ttf);
+}
+
 * {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
@@ -374,6 +398,7 @@ main {
   right: 32px;
   width: 18px;
   height: 18px;
+  background-image: url(/assets/image/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -653,6 +678,7 @@ header .menu-elm nav a.link-entry::after {
   right: 32px;
   width: 20px;
   height: 20px;
+  background-image: url(/assets/image/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -664,6 +690,7 @@ header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
+    background-image: url(/assets/image/arrow-left-green.svg);
   }
 }
 
@@ -733,6 +760,7 @@ header .mark-elm .mark-item:nth-child(2) {
 }
 
 footer .footer-head {
+  background-image: url(/img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -859,6 +887,7 @@ footer .footer-head .link::after {
   right: 36px;
   width: 20px;
   height: 20px;
+  background-image: url(/assets/image/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -1199,6 +1228,7 @@ footer .footer-body-wrapper .info {
   height: 42px;
   background-color: #2abc8f;
   margin-right: 15px;
+  background-image: url(/assets/image/arrow-left.svg);
   background-size: 12px 12px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1313,6 +1343,7 @@ footer .footer-body-wrapper .info {
   display: block;
   width: 12px;
   height: 12px;
+  background-image: url(/assets/image/see-more-arrow.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1452,6 +1483,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .interview::after {
   z-index: -1;
+  background-image: url(/assets/image/top-interview-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
@@ -1598,6 +1630,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .goodpoint .content {
   background-color: rgba(42, 188, 143, 0.07);
+  background-image: url(/assets/image/top-goodpoint-bg.png);
   background-size: 21px 20px;
   padding-top: 70px;
   padding-bottom: 64px;
@@ -1685,34 +1718,34 @@ footer .footer-body-wrapper .info {
 }
 
 .top-page
-  .goodpoint
-  .content
-  .container
-  .comment-item:nth-child(4n + 1)::before {
+.goodpoint
+.content
+.container
+.comment-item:nth-child(4n + 1)::before {
   background-image: url("../img/top-goodpoint-1.svg");
 }
 
 .top-page
-  .goodpoint
-  .content
-  .container
-  .comment-item:nth-child(4n + 2)::before {
+.goodpoint
+.content
+.container
+.comment-item:nth-child(4n + 2)::before {
   background-image: url("../img/top-goodpoint-2.svg");
 }
 
 .top-page
-  .goodpoint
-  .content
-  .container
-  .comment-item:nth-child(4n + 3)::before {
+.goodpoint
+.content
+.container
+.comment-item:nth-child(4n + 3)::before {
   background-image: url("../img/top-goodpoint-3.svg");
 }
 
 .top-page
-  .goodpoint
-  .content
-  .container
-  .comment-item:nth-child(4n + 4)::before {
+.goodpoint
+.content
+.container
+.comment-item:nth-child(4n + 4)::before {
   background-image: url("../img/top-goodpoint-4.svg");
 }
 
@@ -1728,10 +1761,10 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .top-page
-    .goodpoint
-    .content
-    .container
-    .comment-item:not(:nth-child(n + 2)) {
+.goodpoint
+.content
+.container
+.comment-item:not(:nth-child(n + 2)) {
     margin-bottom: 75px;
   }
 }
@@ -1971,10 +2004,10 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-  .business
-  .container
-  .business-group
-  .business-content:not(:first-child) {
+.business
+.container
+.business-group
+.business-content:not(:first-child) {
   margin-top: 80px;
 }
 
@@ -1996,11 +2029,11 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-  .business
-  .container
-  .business-group
-  .business-content
-  p.example::before {
+.business
+.container
+.business-group
+.business-content
+p.example::before {
   content: "例）";
   display: block;
   margin-right: 1em;
@@ -2517,10 +2550,10 @@ footer .footer-body-wrapper .info {
 }
 
 .information-page
-  .entry
-  .container
-  .entry-btn-wrapper
-  .entry-link:not(:first-child) {
+.entry
+.container
+.entry-btn-wrapper
+.entry-link:not(:first-child) {
   margin-top: 15px;
 }
 
@@ -2644,22 +2677,22 @@ footer .footer-body-wrapper .info {
 }
 
 .information-page
-  .flow
-  .container
-  .content-group
-  .content
-  ol
-  li:not(:last-child) {
+.flow
+.container
+.content-group
+.content
+ol
+li:not(:last-child) {
   height: 122px;
 }
 
 .information-page
-  .flow
-  .container
-  .content-group
-  .content
-  ol
-  li:not(:last-child)::after {
+.flow
+.container
+.content-group
+.content
+ol
+li:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -2675,12 +2708,12 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .information-page
-    .flow
-    .container
-    .content-group
-    .content
-    ol
-    li:not(:last-child)::after {
+.flow
+.container
+.content-group
+.content
+ol
+li:not(:last-child)::after {
     height: 64px;
   }
 }
@@ -2840,21 +2873,21 @@ footer .footer-body-wrapper .info {
 }
 
 .entry-page
-  .entry
-  .container
-  .form-chunk
-  .check-group-item
-  input[type="checkbox"] {
+.entry
+.container
+.form-chunk
+.check-group-item
+input[type="checkbox"] {
   display: none;
 }
 
 .entry-page
-  .entry
-  .container
-  .form-chunk
-  .check-group-item
-  input[type="checkbox"]:checked
-  + label::before {
+.entry
+.container
+.form-chunk
+.check-group-item
+input[type="checkbox"]:checked
++ label::before {
   background-color: #2abc8f;
 }
 
@@ -2918,6 +2951,7 @@ footer .footer-body-wrapper .info {
   border-radius: 3px;
   padding-left: 24px;
   background-color: transparent;
+  background-image: url(/assets/image/entry-drop-down.png);
   background-repeat: no-repeat;
   background-size: 17px 10px;
   background-position: right 18px top 19px;
