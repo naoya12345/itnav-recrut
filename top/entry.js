@@ -64,7 +64,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "/assets/htmlparts/header.html";
+const headerUrl = "entry.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
