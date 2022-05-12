@@ -398,7 +398,7 @@ main {
   right: 32px;
   width: 18px;
   height: 18px;
-  background-image: url(/assets/image/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -678,7 +678,7 @@ header .menu-elm nav a.link-entry::after {
   right: 32px;
   width: 20px;
   height: 20px;
-  background-image: url(/assets/image/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -887,7 +887,7 @@ footer .footer-head .link::after {
   right: 36px;
   width: 20px;
   height: 20px;
-  background-image: url(/assets/image/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -1228,7 +1228,7 @@ footer .footer-body-wrapper .info {
   height: 42px;
   background-color: #2abc8f;
   margin-right: 15px;
-  background-image: url(/assets/image/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
   background-size: 12px 12px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1718,34 +1718,34 @@ footer .footer-body-wrapper .info {
 }
 
 .top-page
-.goodpoint
-.content
-.container
-.comment-item:nth-child(4n + 1)::before {
+  .goodpoint
+  .content
+  .container
+  .comment-item:nth-child(4n + 1)::before {
   background-image: url("../img/top-goodpoint-1.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container
-.comment-item:nth-child(4n + 2)::before {
+  .goodpoint
+  .content
+  .container
+  .comment-item:nth-child(4n + 2)::before {
   background-image: url("../img/top-goodpoint-2.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container
-.comment-item:nth-child(4n + 3)::before {
+  .goodpoint
+  .content
+  .container
+  .comment-item:nth-child(4n + 3)::before {
   background-image: url("../img/top-goodpoint-3.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container
-.comment-item:nth-child(4n + 4)::before {
+  .goodpoint
+  .content
+  .container
+  .comment-item:nth-child(4n + 4)::before {
   background-image: url("../img/top-goodpoint-4.svg");
 }
 
@@ -1761,10 +1761,10 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .top-page
-.goodpoint
-.content
-.container
-.comment-item:not(:nth-child(n + 2)) {
+    .goodpoint
+    .content
+    .container
+    .comment-item:not(:nth-child(n + 2)) {
     margin-bottom: 75px;
   }
 }
@@ -2004,10 +2004,10 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container
-.business-group
-.business-content:not(:first-child) {
+  .business
+  .container
+  .business-group
+  .business-content:not(:first-child) {
   margin-top: 80px;
 }
 
@@ -2029,11 +2029,11 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container
-.business-group
-.business-content
-p.example::before {
+  .business
+  .container
+  .business-group
+  .business-content
+  p.example::before {
   content: "例）";
   display: block;
   margin-right: 1em;
@@ -2550,10 +2550,10 @@ p.example::before {
 }
 
 .information-page
-.entry
-.container
-.entry-btn-wrapper
-.entry-link:not(:first-child) {
+  .entry
+  .container
+  .entry-btn-wrapper
+  .entry-link:not(:first-child) {
   margin-top: 15px;
 }
 
@@ -2677,22 +2677,22 @@ p.example::before {
 }
 
 .information-page
-.flow
-.container
-.content-group
-.content
-ol
-li:not(:last-child) {
+  .flow
+  .container
+  .content-group
+  .content
+  ol
+  li:not(:last-child) {
   height: 122px;
 }
 
 .information-page
-.flow
-.container
-.content-group
-.content
-ol
-li:not(:last-child)::after {
+  .flow
+  .container
+  .content-group
+  .content
+  ol
+  li:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -2708,12 +2708,12 @@ li:not(:last-child)::after {
 
 @media (max-width: 768px) {
   .information-page
-.flow
-.container
-.content-group
-.content
-ol
-li:not(:last-child)::after {
+    .flow
+    .container
+    .content-group
+    .content
+    ol
+    li:not(:last-child)::after {
     height: 64px;
   }
 }
@@ -2873,21 +2873,21 @@ li:not(:last-child)::after {
 }
 
 .entry-page
-.entry
-.container
-.form-chunk
-.check-group-item
-input[type="checkbox"] {
+  .entry
+  .container
+  .form-chunk
+  .check-group-item
+  input[type="checkbox"] {
   display: none;
 }
 
 .entry-page
-.entry
-.container
-.form-chunk
-.check-group-item
-input[type="checkbox"]:checked
-+ label::before {
+  .entry
+  .container
+  .form-chunk
+  .check-group-item
+  input[type="checkbox"]:checked
+  + label::before {
   background-color: #2abc8f;
 }
 
