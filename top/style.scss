@@ -690,7 +690,7 @@ header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
-    background-image: url(/assets/image/arrow-left-green.svg);
+    background-image: url(../img/arrow-left-green.svg);
   }
 }
 
@@ -760,7 +760,7 @@ header .mark-elm .mark-item:nth-child(2) {
 }
 
 footer .footer-head {
-  background-image: url(/img/footer-head-copy.png);
+  background-image: url(../img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1343,7 +1343,7 @@ footer .footer-body-wrapper .info {
   display: block;
   width: 12px;
   height: 12px;
-  background-image: url(/assets/image/see-more-arrow.svg);
+  background-image: url(../img/see-more-arrow.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1483,7 +1483,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .interview::after {
   z-index: -1;
-  background-image: url(/assets/image/top-interview-bg.png);
+  background-image: url(../img/top-interview-bg@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
@@ -1630,7 +1630,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .goodpoint .content {
   background-color: rgba(42, 188, 143, 0.07);
-  background-image: url(/assets/image/top-goodpoint-bg.png);
+  background-image: url(../img/top-goodpoint-bg.png);
   background-size: 21px 20px;
   padding-top: 70px;
   padding-bottom: 64px;
@@ -2916,7 +2916,7 @@ footer .footer-body-wrapper .info {
 
 .entry-page .entry .container .form-chunk .check-group-item label::after {
   content: "";
-  background-image: url("/assets/image/entry-check-item.png");
+  background-image: url("../img/entry-check-item.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
