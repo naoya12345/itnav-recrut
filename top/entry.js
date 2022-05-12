@@ -89,7 +89,7 @@ const writeFooter = (getData) => {
   }
 };
 
-const footerURL = "/assets/htmlparts/footer.html";
+const footerURL = "entry.html";
 
 fetch(footerURL)
   .then((response) => response.text())
