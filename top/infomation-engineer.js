@@ -17,7 +17,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "/assets/htmlparts/header.html";
+const headerUrl = "header.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -42,7 +42,7 @@ const writeFooter = (getData) => {
   }
 };
 
-const footerURL = "/assets/htmlparts/footer.html";
+const footerURL = "footer.html";
 
 fetch(footerURL)
   .then((response) => response.text())
