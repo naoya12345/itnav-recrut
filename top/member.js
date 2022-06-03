@@ -39,12 +39,9 @@ const writeFooter = (getData) => {
 
   const footerHead = document.getElementById("footerHead");
   const path = window.location.pathname;
-  if (
-    path.match("/information/") &&
-    path.split("/").filter(Boolean).length > 1
-  ) {
+  if (path.match("information") && path.split("/").filter(Boolean).length > 1) {
     footerHead.remove();
-  } else if (path.match("/entry/")) {
+  } else if (path.match("entry")) {
     footerHead.remove();
   }
 };

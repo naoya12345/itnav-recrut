@@ -17,7 +17,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "header.html";
+const headerUrl = "infomation-engineer.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -32,17 +32,14 @@ const writeFooter = (getData) => {
 
   const footerHead = document.getElementById("footerHead");
   const path = window.location.pathname;
-  if (
-    path.match("information.html") &&
-    path.split("/").filter(Boolean).length > 1
-  ) {
+  if (path.match("information") && path.split("/").filter(Boolean).length > 1) {
     footerHead.remove();
-  } else if (path.match("entry.html")) {
+  } else if (path.match("entry")) {
     footerHead.remove();
   }
 };
 
-const footerURL = "footer.html";
+const footerURL = "infomation-engineer.html";
 
 fetch(footerURL)
   .then((response) => response.text())
