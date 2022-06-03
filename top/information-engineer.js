@@ -17,7 +17,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "infomation-engineer.html";
+const headerUrl = "information-engineer.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -39,7 +39,7 @@ const writeFooter = (getData) => {
   }
 };
 
-const footerURL = "infomation-engineer.html";
+const footerURL = "information-engineer.html";
 
 fetch(footerURL)
   .then((response) => response.text())
