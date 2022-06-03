@@ -1,5 +1,5 @@
 //footer
-const writeFooter = (getData) => {
+function writeFooter(getData) {
   document.getElementById("footer").innerHTML =
     getData.getElementsByTagName("footer")[0].innerHTML;
 
@@ -13,7 +13,7 @@ const writeFooter = (getData) => {
   } else if (path.match("/entry/")) {
     footerHead.remove();
   }
-};
+}
 
 const footerURL = "itnavte.html";
 
