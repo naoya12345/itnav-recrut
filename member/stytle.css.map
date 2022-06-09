@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "goodpoint.scss"
+        "stytle.scss"
     ],
     "names": [],
-    "file": "goodpoint.css"
+    "file": "stytle.css"
 }
