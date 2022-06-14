@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "style.scss"
+        "information-engineer.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "information-engineer.css"
 }

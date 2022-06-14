@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "stytle.scss"
+        "information-sales.scss"
     ],
     "names": [],
-    "file": "stytle.css"
+    "file": "information-sales.css"
 }

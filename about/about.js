@@ -15,7 +15,7 @@ function writeFooter(getData) {
   }
 }
 
-const footerURL = "itnavte.html";
+const footerURL = "about.html";
 
 fetch(footerURL)
   .then((response) => response.text())
@@ -42,7 +42,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "itnavte.html";
+const headerUrl = "about.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
