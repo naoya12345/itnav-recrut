@@ -25,23 +25,6 @@ fetch(headerUrl)
     writeHeader(new DOMParser().parseFromString(data, "text/html"))
   );
 
-//footer
-const writeFooter = (getData) => {
-  document.getElementById("footer").innerHTML =
-    getData.getElementsByTagName("footer")[0].innerHTML;
-
-  const footerHead = document.getElementById("footerHead");
-  const path = window.location.pathname;
-  if (
-    path.match("/information/") &&
-    path.split("/").filter(Boolean).length > 1
-  ) {
-    footerHead.remove();
-  } else if (path.match("/entry/")) {
-    footerHead.remove();
-  }
-};
-
 const footerURL = "information.html";
 
 fetch(footerURL)
