@@ -38,3 +38,11 @@ const writeFooter = (getData) => {
     footerHead.remove();
   }
 };
+
+const footerURL = "information-sales.html";
+
+fetch(footerURL)
+  .then((response) => response.text())
+  .then((data) =>
+    writeFooter(new DOMParser().parseFromString(data, "text/html"))
+  );
