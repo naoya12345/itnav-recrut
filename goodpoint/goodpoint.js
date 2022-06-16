@@ -1,5 +1,5 @@
 //header
-const writeHeader = (getData) => {
+function writeHeader(getData) {
   document.getElementById("header").innerHTML =
     getData.getElementsByTagName("header")[0].innerHTML;
 
@@ -15,7 +15,7 @@ const writeHeader = (getData) => {
     const headerMenu = document.getElementById("headerMenu");
     headerMenu.classList.toggle("is-open");
   };
-};
+}
 
 const headerUrl = "goodpoint.html";
 

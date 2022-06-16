@@ -88,11 +88,3 @@ const writeFooter = (getData) => {
     footerHead.remove();
   }
 };
-
-const footerURL = "entry.html";
-
-fetch(footerURL)
-  .then((response) => response.text())
-  .then((data) =>
-    writeFooter(new DOMParser().parseFromString(data, "text/html"))
-  );
