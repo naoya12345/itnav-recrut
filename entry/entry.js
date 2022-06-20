@@ -64,7 +64,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "entry.html";
+const headerUrl = "index.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -80,11 +80,11 @@ const writeFooter = (getData) => {
   const footerHead = document.getElementById("footerHead");
   const path = window.location.pathname;
   if (
-    path.match("information.html") &&
+    path.match("/information/") &&
     path.split("/").filter(Boolean).length > 1
   ) {
     footerHead.remove();
-  } else if (path.match("entry.html")) {
+  } else if (path.match("index.html")) {
     footerHead.remove();
   }
 };

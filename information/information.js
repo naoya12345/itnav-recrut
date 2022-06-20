@@ -17,7 +17,7 @@ function writeHeader(getData) {
   };
 }
 
-const headerUrl = "information.html";
+const headerUrl = "index.html";
 
 fetch(headerUrl)
   .then((response) => response.text())

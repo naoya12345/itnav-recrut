@@ -17,7 +17,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "information-sales.html";
+const headerUrl = "infdex.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -39,7 +39,7 @@ const writeFooter = (getData) => {
   }
 };
 
-const footerURL = "information-sales.html";
+const footerURL = "index.html";
 
 fetch(footerURL)
   .then((response) => response.text())

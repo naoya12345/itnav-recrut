@@ -17,7 +17,7 @@ function writeHeader(getData) {
   };
 }
 
-const headerUrl = "goodpoint.html";
+const headerUrl = "index.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
@@ -42,7 +42,7 @@ const writeFooter = (getData) => {
   }
 };
 
-const footerURL = "goodpoint.html";
+const footerURL = "index.html";
 
 fetch(footerURL)
   .then((response) => response.text())
