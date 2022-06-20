@@ -24,3 +24,28 @@ fetch(headerUrl)
   .then((data) =>
     writeHeader(new DOMParser().parseFromString(data, "text/html"))
   );
+
+const writeFooter = (getData) => {
+  document.getElementById("footer").innerHTML =
+    getData.getElementsByTagName("footer")[0].innerHTML;
+
+  const footerHead = document.getElementById("footerHead");
+  const path = window.location.pathname;
+  if (
+    path.match("/information/") &&
+    path.split("/").filter(Boolean).length > 1
+  ) {
+    footerHead.remove();
+  } else if (path.match("/entry/")) {
+    footerHead.remove();
+  }
+};
+
+//footer
+const footerURL = "index.html";
+
+fetch(footerURL)
+  .then((response) => response.text())
+  .then((data) =>
+    writeFooter(new DOMParser().parseFromString(data, "text/html"))
+  );
