@@ -398,7 +398,7 @@ main {
   right: 32px;
   width: 18px;
   height: 18px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -678,7 +678,7 @@ header .menu-elm nav a.link-entry::after {
   right: 32px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -690,7 +690,7 @@ header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
-    background-image: url(../img/arrow-left-green.svg);
+    background-image: url(/img/arrow-left-green.svg);
   }
 }
 
@@ -760,7 +760,7 @@ header .mark-elm .mark-item:nth-child(2) {
 }
 
 footer .footer-head {
-  background-image: url(../img/footer-head-copy.png);
+  background-image: url(/img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -889,7 +889,7 @@ footer .footer-head .link::after {
   right: 36px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;

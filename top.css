@@ -398,7 +398,7 @@ main {
   right: 32px;
   width: 18px;
   height: 18px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -678,7 +678,7 @@ header .menu-elm nav a.link-entry::after {
   right: 32px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -690,7 +690,7 @@ header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
-    background-image: url(../img/arrow-left-green.svg);
+    background-image: url(/img/arrow-left-green.svg);
   }
 }
 
@@ -760,7 +760,7 @@ header .mark-elm .mark-item:nth-child(2) {
 }
 
 footer .footer-head {
-  background-image: url(../img/footer-head-copy.png);
+  background-image: url(/img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -889,7 +889,7 @@ footer .footer-head .link::after {
   right: 36px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -1230,7 +1230,7 @@ footer .footer-body-wrapper .info {
   height: 42px;
   background-color: #2abc8f;
   margin-right: 15px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-size: 12px 12px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1345,7 +1345,7 @@ footer .footer-body-wrapper .info {
   display: block;
   width: 12px;
   height: 12px;
-  background-image: url(../img/see-more-arrow.svg);
+  background-image: url(/img/see-more-arrow.svg);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1371,7 +1371,7 @@ footer .footer-body-wrapper .info {
   width: 58%;
   height: 100%;
   background-color: rgba(42, 188, 143, 0.07);
-  background-image: url(../img/top-message.png);
+  background-image: url(/img/top-message.png);
   background-size: 657px 591px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1485,7 +1485,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .interview::after {
   z-index: -1;
-  background-image: url(../img/top-interview-bg@2x.png);
+  background-image: url(/img/top-interview-bg@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
   mix-blend-mode: screen;
@@ -1632,7 +1632,7 @@ footer .footer-body-wrapper .info {
 
 .top-page .goodpoint .content {
   background-color: rgba(42, 188, 143, 0.07);
-  background-image: url(../img/top-goodpoint-bg.png);
+  background-image: url(/img/top-goodpoint-bg.png);
   background-size: 21px 20px;
   padding-top: 70px;
   padding-bottom: 64px;
@@ -1724,7 +1724,7 @@ footer .footer-body-wrapper .info {
 .content
 .container1
 .comment-item:nth-child(4n + 1)::before {
-  background-image: url("../img/top-goodpoint-1.svg");
+  background-image: url("/img/top-goodpoint-1.svg");
 }
 
 .top-page
@@ -1732,7 +1732,7 @@ footer .footer-body-wrapper .info {
 .content
 .container1
 .comment-item:nth-child(4n + 2)::before {
-  background-image: url("../img/top-goodpoint-2.svg");
+  background-image: url("/img/top-goodpoint-2.svg");
 }
 
 .top-page
@@ -1740,7 +1740,7 @@ footer .footer-body-wrapper .info {
 .content
 .container1
 .comment-item:nth-child(4n + 3)::before {
-  background-image: url("../img/top-goodpoint-3.svg");
+  background-image: url("/img/top-goodpoint-3.svg");
 }
 
 .top-page
@@ -1748,7 +1748,7 @@ footer .footer-body-wrapper .info {
 .content
 .container1
 .comment-item:nth-child(4n + 4)::before {
-  background-image: url("../img/top-goodpoint-4.svg");
+  background-image: url("/img/top-goodpoint-4.svg");
 }
 
 .top-page .goodpoint .content .container1 .comment-item:nth-child(even) {

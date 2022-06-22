@@ -398,7 +398,7 @@ main {
   right: 32px;
   width: 18px;
   height: 18px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -678,7 +678,7 @@ header .menu-elm nav a.link-entry::after {
   right: 32px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -690,7 +690,7 @@ header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
-    background-image: url(../img/arrow-left-green.svg);
+    background-image: url(/img/arrow-left-green.svg);
   }
 }
 
@@ -760,7 +760,7 @@ header .mark-elm .mark-item:nth-child(2) {
 }
 
 footer .footer-head {
-  background-image: url(../img/footer-head-copy.png);
+  background-image: url(/img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -889,7 +889,7 @@ footer .footer-head .link::after {
   right: 36px;
   width: 20px;
   height: 20px;
-  background-image: url(../img/arrow-left.svg);
+  background-image: url(/img/arrow-left.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.2s;
@@ -1250,7 +1250,7 @@ input[type="checkbox"]:checked
 
 .entry-page .entry .container1 .form-chunk .check-group-item label::after {
   content: "";
-  background-image: url("../img/entry-check-item.png");
+  background-image: url("/img/entry-check-item.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -1285,7 +1285,7 @@ input[type="checkbox"]:checked
   border-radius: 3px;
   padding-left: 24px;
   background-color: transparent;
-  background-image: url(../img/entry-drop-down.png);
+  background-image: url(/img/entry-drop-down.png);
   background-repeat: no-repeat;
   background-size: 17px 10px;
   background-position: right 18px top 19px;
