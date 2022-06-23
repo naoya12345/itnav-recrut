@@ -252,12 +252,12 @@ main {
   object-fit: cover;
 }
 
-.container1 {
+.container {
   width: 1000px;
 }
 
 @media (max-width: 1024px) {
-  .container1 {
+  .container {
     width: calc(100% - (20px * 2));
   }
 }
@@ -316,17 +316,17 @@ main {
   left: 0px;
 }
 
-.container1 h2 .en {
+.container h2 .en {
   font-family: "Rajdhani", "Noto Sans JP", sans-serif;
   font-size: 60px;
   line-height: 77px;
 }
 
-.container1 h2 .en::first-letter {
+.container h2 .en::first-letter {
   color: #2abc8f;
 }
 
-.container1 h2 .ja {
+.container h2 .ja {
   position: relative;
   margin-top: 6px;
   font-size: 16px;
@@ -334,12 +334,12 @@ main {
 }
 
 @media (max-width: 768px) {
-  .container1 h2 .ja {
+  .container h2 .ja {
     margin-top: 2px;
   }
 }
 
-.container1 h2 .ja::before {
+.container h2 .ja::before {
   content: "";
   background-color: #2abc8f;
   width: 9px;

@@ -253,12 +253,12 @@ main {
   object-fit: cover;
 }
 
-.container1 {
+.container {
   width: 1000px;
 }
 
 @media (max-width: 1024px) {
-  .container1 {
+  .container {
     width: calc(100% - (20px * 2));
   }
 }
@@ -317,17 +317,17 @@ main {
   left: 0px;
 }
 
-.container1 h2 .en {
+.container h2 .en {
   font-family: "Rajdhani", "Noto Sans JP", sans-serif;
   font-size: 60px;
   line-height: 77px;
 }
 
-.container1 h2 .en::first-letter {
+.container h2 .en::first-letter {
   color: #2abc8f;
 }
 
-.container1 h2 .ja {
+.container h2 .ja {
   position: relative;
   margin-top: 6px;
   font-size: 16px;
@@ -335,12 +335,12 @@ main {
 }
 
 @media (max-width: 768px) {
-  .container1 h2 .ja {
+  .container h2 .ja {
     margin-top: 2px;
   }
 }
 
-.container1 h2 .ja::before {
+.container h2 .ja::before {
   content: "";
   background-color: #2abc8f;
   width: 9px;
@@ -1083,14 +1083,14 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.goodpoint-page .good-point .container1 ul {
+.goodpoint-page .good-point .container ul {
   list-style: none;
   font-size: 18px;
   line-height: 36px;
   text-align: center;
 }
 
-.goodpoint-page .good-point .container1 ul li {
+.goodpoint-page .good-point .container ul li {
   border: solid 3px #e1f5ef;
   background-color: #fff;
   width: 700px;
@@ -1100,13 +1100,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li {
+  .goodpoint-page .good-point .container ul li {
     width: 95%;
     padding: 33px 40px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li::before {
+.goodpoint-page .good-point .container ul li::before {
   content: "";
   position: absolute;
   bottom: -26px;
@@ -1118,79 +1118,79 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li::before {
+  .goodpoint-page .good-point .container ul li::before {
     width: 124px;
     height: 108px;
     bottom: -10px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:not(:first-child) {
+.goodpoint-page .good-point .container ul li:not(:first-child) {
   margin-top: 92px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li:not(:first-child) {
+  .goodpoint-page .good-point .container ul li:not(:first-child) {
     margin-top: 45px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(odd) {
+.goodpoint-page .good-point .container ul li:nth-child(odd) {
   border-top-left-radius: 0;
   padding-left: 160px;
   margin-left: auto;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li:nth-child(odd) {
+  .goodpoint-page .good-point .container ul li:nth-child(odd) {
     padding-left: 105px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(odd)::before {
+.goodpoint-page .good-point .container ul li:nth-child(odd)::before {
   left: -50px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li:nth-child(odd)::before {
+  .goodpoint-page .good-point .container ul li:nth-child(odd)::before {
     left: -25px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(even) {
+.goodpoint-page .good-point .container ul li:nth-child(even) {
   border-top-right-radius: 0;
   padding-right: 160px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li:nth-child(even) {
+  .goodpoint-page .good-point .container ul li:nth-child(even) {
     padding-right: 105px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(even)::before {
+.goodpoint-page .good-point .container ul li:nth-child(even)::before {
   right: -50px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .container1 ul li:nth-child(even)::before {
+  .goodpoint-page .good-point .container ul li:nth-child(even)::before {
     right: -25px;
   }
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(4n + 1)::before {
+.goodpoint-page .good-point .container ul li:nth-child(4n + 1)::before {
   background-image: url("/img/goodpoint-1.png");
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(4n + 2)::before {
+.goodpoint-page .good-point .container ul li:nth-child(4n + 2)::before {
   background-image: url("/img/goodpoint-2.png");
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(4n + 3)::before {
+.goodpoint-page .good-point .container ul li:nth-child(4n + 3)::before {
   background-image: url("/img/goodpoint-3.png");
 }
 
-.goodpoint-page .good-point .container1 ul li:nth-child(4n + 4)::before {
+.goodpoint-page .good-point .container ul li:nth-child(4n + 4)::before {
   background-image: url("/img/goodpoint-4.png");
 }
 /*# sourceMappingURL=goodpoint.css.map */

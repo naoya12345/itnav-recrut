@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import "../index";
 
-.about-page .page-title .container1 .about-desc {
+.about-page .page-title .container .about-desc {
   font-size: 18px;
   line-height: 45px;
   margin-top: 100px;
 }
 
 @media (max-width: 768px) {
-  .about-page .page-title .container1 .about-desc {
+  .about-page .page-title .container .about-desc {
     font-size: 16px;
     line-height: 28px;
     margin-top: 40px;
@@ -45,14 +45,14 @@
   }
 }
 
-.about-page .mvv .container1 {
+.about-page .mvv .container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .container1 {
+  .about-page .mvv .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -60,16 +60,16 @@
   }
 }
 
-.about-page .mvv .container1:not(:first-child) {
+.about-page .mvv .container:not(:first-child) {
   margin-top: 115px;
 }
 
-.about-page .mvv .container1-text {
+.about-page .mvv .container-text {
   width: 680px;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .container1-text {
+  .about-page .mvv .container-text {
     margin-top: 32px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -77,32 +77,32 @@
   }
 }
 
-.about-page .mvv .mission .container1-text {
+.about-page .mvv .mission .container-text {
   font-size: 32px;
   font-weight: 700;
   line-height: 2em;
 }
 
-.about-page .mvv .vision .container1-text {
+.about-page .mvv .vision .container-text {
   font-size: 24px;
   font-weight: 700;
   line-height: 48px;
 }
 
-.about-page .mvv .value .container1-text {
+.about-page .mvv .value .container-text {
   font-size: 18px;
   font-weight: 500;
   line-height: 2em;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .value .container1-text {
+  .about-page .mvv .value .container-text {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .value .container1-text .main {
+  .about-page .mvv .value .container-text .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -110,11 +110,11 @@
   }
 }
 
-.about-page .mvv .value .container1-text .main:not(:first-of-type) {
+.about-page .mvv .value .container-text .main:not(:first-of-type) {
   margin-top: 48px;
 }
 
-.about-page .mvv .value .container1-text .main .en {
+.about-page .mvv .value .container-text .main .en {
   font-size: 32px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
@@ -122,17 +122,17 @@
   margin-right: 16px;
 }
 
-.about-page .mvv .value .container1-text .main .ja {
+.about-page .mvv .value .container-text .main .ja {
   font-size: 16px;
   font-weight: 700;
   color: #00000070;
 }
 
-.about-page .mvv .value .container1-text .sub {
+.about-page .mvv .value .container-text .sub {
   margin-top: 8px;
 }
 
-.about-page .message .container1 {
+.about-page .message .container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .message .container1 {
+  .about-page .message .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -149,38 +149,38 @@
   }
 }
 
-.about-page .message .container1 .message-title .profile-img {
+.about-page .message .container .message-title .profile-img {
   width: 230px;
   height: 290px;
   margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-  .about-page .message .container1 .message-title .profile-img {
+  .about-page .message .container .message-title .profile-img {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.about-page .message .container1 .message-title .profile-name {
+.about-page .message .container .message-title .profile-name {
   text-align: center;
   margin-top: 24px;
   font-size: 22px;
 }
 
-.about-page .message .container1 .message-title .profile-name .kana {
+.about-page .message .container .message-title .profile-name .kana {
   font-size: 14px;
   margin-top: 12px;
 }
 
-.about-page .message .container1 .message-text {
+.about-page .message .container .message-text {
   width: 680px;
   font-size: 18px;
   line-height: 45px;
 }
 
 @media (max-width: 768px) {
-  .about-page .message .container1 .message-text {
+  .about-page .message .container .message-text {
     margin-top: 44px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -190,7 +190,7 @@
   }
 }
 
-.about-page .business .container1 {
+.about-page .business .container {
   margin-top: 230px;
   margin-bottom: 300px;
   -webkit-box-pack: justify;
@@ -199,20 +199,20 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .business .container1 {
+  .about-page .business .container {
     margin-top: 100px;
     margin-bottom: 160px;
     display: block;
   }
 }
 
-.about-page .business .container1 .business-group .business-content {
+.about-page .business .container .business-group .business-content {
   width: 680px;
   font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .container1 .business-group .business-content {
+  .about-page .business .container .business-group .business-content {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -223,32 +223,32 @@
 
 .about-page
   .business
-  .container1
+  .container
   .business-group
   .business-content:not(:first-child) {
   margin-top: 80px;
 }
 
-.about-page .business .container1 .business-group .business-content h3 {
+.about-page .business .container .business-group .business-content h3 {
   font-weight: 700;
   padding-bottom: 20px;
   border-bottom: 1px solid #d5d5d5;
   margin-bottom: 24px;
 }
 
-.about-page .business .container1 .business-group .business-content p {
+.about-page .business .container .business-group .business-content p {
   line-height: 45px;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .container1 .business-group .business-content p {
+  .about-page .business .container .business-group .business-content p {
     line-height: 28px;
   }
 }
 
 .about-page
   .business
-  .container1
+  .container
   .business-group
   .business-content
   p.example::before {
@@ -257,22 +257,16 @@
   margin-right: 1em;
 }
 
-.about-page .business .container1 .business-group .business-content p.tool {
+.about-page .business .container .business-group .business-content p.tool {
   margin-top: 2em;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .container1 .business-group .business-content p.tool {
+  .about-page .business .container .business-group .business-content p.tool {
     margin-top: 1.3em;
   }
 }
 
-.about-page
-  .business
-  .container1
-  .business-group
-  .business-content
-  p.tool
-  span {
+.about-page .business .container .business-group .business-content p.tool span {
   color: #2abc8f;
 }
