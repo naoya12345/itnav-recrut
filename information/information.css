@@ -253,12 +253,12 @@ main {
   object-fit: cover;
 }
 
-.container1 {
+.pane {
   width: 1000px;
 }
 
 @media (max-width: 1024px) {
-  .container1 {
+  .pane {
     width: calc(100% - (20px * 2));
   }
 }
@@ -317,17 +317,17 @@ main {
   left: 0px;
 }
 
-.container1 h2 .en {
+.pane h2 .en {
   font-family: "Rajdhani", "Noto Sans JP", sans-serif;
   font-size: 60px;
   line-height: 77px;
 }
 
-.container1 h2 .en::first-letter {
+.pane h2 .en::first-letter {
   color: #2abc8f;
 }
 
-.container1 h2 .ja {
+.pane h2 .ja {
   position: relative;
   margin-top: 6px;
   font-size: 16px;
@@ -335,12 +335,12 @@ main {
 }
 
 @media (max-width: 768px) {
-  .container1 h2 .ja {
+  .pane h2 .ja {
     margin-top: 2px;
   }
 }
 
-.container1 h2 .ja::before {
+.pane h2 .ja::before {
   content: "";
   background-color: #2abc8f;
   width: 9px;
@@ -1386,122 +1386,122 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.top-page .message .container1 {
+.top-page .message .pane {
   width: 1200px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .container1 {
+  .top-page .message .pane {
     width: calc(100% - (20px * 2));
   }
 }
 
-.top-page .message .container1 .content {
+.top-page .message .pane .content {
   width: 55.5%;
   margin-top: 116px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .container1 .content {
+  .top-page .message .pane .content {
     width: 61%;
     margin-top: 95px;
   }
 }
 
-.top-page .message .container1 .content .copy {
+.top-page .message .pane .content .copy {
   width: 441px;
   height: 96px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .container1 .content .copy {
+  .top-page .message .pane .content .copy {
     width: 245px;
     height: 90px;
   }
 }
 
-.top-page .message .container1 .content p {
+.top-page .message .pane .content p {
   font-size: 18px;
   line-height: 45px;
   margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .container1 .content p {
+  .top-page .message .pane .content p {
     font-size: 16px;
     line-height: 28px;
     margin-top: 20px;
   }
 }
 
-.top-page .message .container1 .content .see-more {
+.top-page .message .pane .content .see-more {
   margin-top: 45px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .container1 .content .see-more {
+  .top-page .message .pane .content .see-more {
     margin-top: 22px;
   }
 }
 
-.information-page .entry .container1 {
+.information-page .entry .pane {
   margin-top: 100px;
 }
 
 @media (max-width: 768px) {
-  .information-page .entry .container1 {
+  .information-page .entry .pane {
     width: 100%;
     margin-top: 58px;
   }
 }
 
-.information-page .entry .container1 .catch-image {
+.information-page .entry .pane .catch-image {
   width: 540px;
   height: 160px;
 }
 
 @media (max-width: 768px) {
-  .information-page .entry .container1 .catch-image {
+  .information-page .entry .pane .catch-image {
     width: 270px;
     height: 80px;
   }
 }
 
-.information-page .entry .container1 .cover-image {
+.information-page .entry .pane .cover-image {
   margin-top: 52px;
 }
 
 @media (max-width: 768px) {
-  .information-page .entry .container1 .cover-image {
+  .information-page .entry .pane .cover-image {
     margin-top: 62px;
   }
 }
 
-.information-page .entry .container1 .entry-btn-wrapper {
+.information-page .entry .pane .entry-btn-wrapper {
   margin-top: -60px;
 }
 
 @media (max-width: 768px) {
-  .information-page .entry .container1 .entry-btn-wrapper {
+  .information-page .entry .pane .entry-btn-wrapper {
     margin-top: -25px;
   }
 }
 
 @media (max-width: 768px) {
-  .information-page .entry .container1 .entry-btn-wrapper .entry-link {
+  .information-page .entry .pane .entry-btn-wrapper .entry-link {
     width: calc(100% - (20px * 2));
     font-size: 25px;
   }
-  .information-page .entry .container1 .entry-btn-wrapper .entry-link .ja {
+  .information-page .entry .pane .entry-btn-wrapper .entry-link .ja {
     font-size: 19px;
   }
 }
 
 .information-page
-  .entry
-  .container1
-  .entry-btn-wrapper
-  .entry-link:not(:first-child) {
+.entry
+.pane
+.entry-btn-wrapper
+.entry-link:not(:first-child) {
   margin-top: 15px;
 }
 
@@ -1537,14 +1537,14 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.information-page .flow .container1 {
+.information-page .flow .pane {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .information-page .flow .container1 {
+  .information-page .flow .pane {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1552,38 +1552,34 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.information-page .flow .container1 .content-group {
+.information-page .flow .pane .content-group {
   width: 100%;
   max-width: 680px;
 }
 
 @media (max-width: 768px) {
-  .information-page .flow .container1 .content-group {
+  .information-page .flow .pane .content-group {
     margin-top: 55px;
   }
 }
 
-.information-page .flow .container1 .content-group .content:not(:first-child) {
+.information-page .flow .pane .content-group .content:not(:first-child) {
   margin-top: 130px;
 }
 
 @media (max-width: 768px) {
-  .information-page
-    .flow
-    .container1
-    .content-group
-    .content:not(:first-child) {
+  .information-page .flow .pane .content-group .content:not(:first-child) {
     margin-top: 116px;
   }
 }
 
-.information-page .flow .container1 .content-group .content h3 {
+.information-page .flow .pane .content-group .content h3 {
   color: #2abc8f;
   font-size: 20px;
   font-weight: 700;
 }
 
-.information-page .flow .container1 .content-group .content ol {
+.information-page .flow .pane .content-group .content ol {
   font-size: 18px;
   line-height: 24px;
   margin-top: 45px;
@@ -1592,18 +1588,18 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .information-page .flow .container1 .content-group .content ol {
+  .information-page .flow .pane .content-group .content ol {
     font-size: 16px;
   }
 }
 
-.information-page .flow .container1 .content-group .content ol li {
+.information-page .flow .pane .content-group .content ol li {
   position: relative;
   padding-top: 12px;
   padding-left: 66px;
 }
 
-.information-page .flow .container1 .content-group .content ol li::before {
+.information-page .flow .pane .content-group .content ol li::before {
   counter-increment: listNum;
   content: counter(listNum);
   display: -webkit-box;
@@ -1628,23 +1624,17 @@ footer .footer-body-wrapper .info {
   border-radius: 1000px;
 }
 
-.information-page
-  .flow
-  .container1
-  .content-group
-  .content
-  ol
-  li:not(:last-child) {
+.information-page .flow .pane .content-group .content ol li:not(:last-child) {
   height: 122px;
 }
 
 .information-page
-  .flow
-  .container1
-  .content-group
-  .content
-  ol
-  li:not(:last-child)::after {
+.flow
+.pane
+.content-group
+.content
+ol
+li:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -1660,12 +1650,12 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .information-page
-    .flow
-    .container1
-    .content-group
-    .content
-    ol
-    li:not(:last-child)::after {
+.flow
+.pane
+.content-group
+.content
+ol
+li:not(:last-child)::after {
     height: 64px;
   }
 }

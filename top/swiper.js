@@ -1392,7 +1392,7 @@
     noSwipingClass: "swiper-no-swiping",
     noSwipingSelector: null,
     passiveListeners: !0,
-    container1ModifierClass: "swiper-",
+    paneModifierClass: "swiper-",
     slideClass: "swiper-slide",
     slideBlankClass: "swiper-slide-invisible-blank",
     slideActiveClass: "swiper-slide-active",
@@ -2421,8 +2421,7 @@
             t.params.cssMode
           )
             return;
-          const s =
-            "container1" === t.params.touchEventsTarget ? t.el : t.wrapperEl;
+          const s = "pane" === t.params.touchEventsTarget ? t.el : t.wrapperEl;
           (s.style.cursor = "move"),
             (s.style.cursor = e ? "-webkit-grabbing" : "-webkit-grab"),
             (s.style.cursor = e ? "-moz-grabbin" : "-moz-grab"),
@@ -2434,7 +2433,7 @@
             (e.params.watchOverflow && e.isLocked) ||
             e.params.cssMode ||
             (e[
-              "container1" === e.params.touchEventsTarget ? "el" : "wrapperEl"
+              "pane" === e.params.touchEventsTarget ? "el" : "wrapperEl"
             ].style.cursor = "");
         },
       },
@@ -2475,16 +2474,16 @@
             c = i.enabled;
           d && !p
             ? (r.removeClass(
-                `${i.container1ModifierClass}grid ${i.container1ModifierClass}grid-column`
+                `${i.paneModifierClass}grid ${i.paneModifierClass}grid-column`
               ),
-              e.emitcontainer1Classes())
+              e.emitpaneClasses())
             : !d &&
               p &&
-              (r.addClass(`${i.container1ModifierClass}grid`),
+              (r.addClass(`${i.paneModifierClass}grid`),
               ((o.grid.fill && "column" === o.grid.fill) ||
                 (!o.grid.fill && "column" === i.grid.fill)) &&
-                r.addClass(`${i.container1ModifierClass}grid-column`),
-              e.emitcontainer1Classes());
+                r.addClass(`${i.paneModifierClass}grid-column`),
+              e.emitpaneClasses());
           const u = o.direction && o.direction !== i.direction,
             h = i.loop && (o.slidesPerView !== i.slidesPerView || u);
           u && s && e.changeDirection(), f(e.params, o);
@@ -2506,7 +2505,7 @@
             e.emit("breakpoint", o);
         },
         getBreakpoint: function (e, t = "window", s) {
-          if (!e || ("container1" === t && !s)) return;
+          if (!e || ("pane" === t && !s)) return;
           let a = !1;
           const i = r(),
             n = "window" === t ? i.innerHeight : s.clientHeight,
@@ -2584,13 +2583,13 @@
                 { "css-mode": s.cssMode },
                 { centered: s.cssMode && s.centeredSlides },
               ],
-              s.container1ModifierClass
+              s.paneModifierClass
             );
-          t.push(...l), i.addClass([...t].join(" ")), e.emitcontainer1Classes();
+          t.push(...l), i.addClass([...t].join(" ")), e.emitpaneClasses();
         },
         removeClasses: function () {
           const { $el: e, classNames: t } = this;
-          e.removeClass(t.join(" ")), this.emitcontainer1Classes();
+          e.removeClass(t.join(" ")), this.emitpaneClasses();
         },
       },
       images: {
@@ -2781,7 +2780,7 @@
         s.updateActiveIndex(),
         s.updateSlidesClasses();
     }
-    emitcontainer1Classes() {
+    emitpaneClasses() {
       const e = this;
       if (!e.params._emitClasses || !e.el) return;
       const t = e.el.className
@@ -2789,9 +2788,9 @@
         .filter(
           (t) =>
             0 === t.indexOf("swiper") ||
-            0 === t.indexOf(e.params.container1ModifierClass)
+            0 === t.indexOf(e.params.paneModifierClass)
         );
-      e.emit("_container1Classes", t.join(" "));
+      e.emit("_paneClasses", t.join(" "));
     }
     getSlideClasses(e) {
       const t = this;
@@ -2881,9 +2880,9 @@
         e === a ||
           ("horizontal" !== e && "vertical" !== e) ||
           (s.$el
-            .removeClass(`${s.params.container1ModifierClass}${a}`)
-            .addClass(`${s.params.container1ModifierClass}${e}`),
-          s.emitcontainer1Classes(),
+            .removeClass(`${s.params.paneModifierClass}${a}`)
+            .addClass(`${s.params.paneModifierClass}${e}`),
+          s.emitpaneClasses(),
           (s.params.direction = e),
           s.slides.each((t) => {
             "vertical" === e ? (t.style.width = "") : (t.style.height = "");
@@ -3143,8 +3142,8 @@
     } = e;
     a("beforeInit", () => {
       if (s.params.effect !== t) return;
-      s.classNames.push(`${s.params.container1ModifierClass}${t}`),
-        l && l() && s.classNames.push(`${s.params.container1ModifierClass}3d`);
+      s.classNames.push(`${s.params.paneModifierClass}${t}`),
+        l && l() && s.classNames.push(`${s.params.paneModifierClass}3d`);
       const e = n ? n() : {};
       Object.assign(s.params, e), Object.assign(s.originalParams, e);
     }),
@@ -3394,7 +3393,7 @@
         s("beforeInit", () => {
           e.params.virtual.enabled &&
             ((e.virtual.slides = e.params.virtual.slides),
-            e.classNames.push(`${e.params.container1ModifierClass}virtual`),
+            e.classNames.push(`${e.params.paneModifierClass}virtual`),
             (e.params.watchSlidesProgress = !0),
             (e.originalParams.watchSlidesProgress = !0),
             e.params.initialSlide || r());
@@ -3578,7 +3577,7 @@
           invert: !1,
           forceToAxis: !1,
           sensitivity: 1,
-          eventsTarget: "container1",
+          eventsTarget: "pane",
           thresholdDelta: null,
           thresholdTime: null,
         },
@@ -3623,7 +3622,7 @@
         e.params.cssMode && s.preventDefault();
         let o = e.$el;
         if (
-          ("container1" !== e.params.mousewheel.eventsTarget &&
+          ("pane" !== e.params.mousewheel.eventsTarget &&
             (o = d(e.params.mousewheel.eventsTarget)),
           !e.mouseEntered && !o[0].contains(s.target) && !r.releaseOnEdges)
         )
@@ -3772,7 +3771,7 @@
       }
       function v(t) {
         let s = e.$el;
-        "container1" !== e.params.mousewheel.eventsTarget &&
+        "pane" !== e.params.mousewheel.eventsTarget &&
           (s = d(e.params.mousewheel.eventsTarget)),
           s[t]("mouseenter", h),
           s[t]("mouseleave", m),
@@ -4563,7 +4562,7 @@
           maxRatio: 3,
           minRatio: 1,
           toggle: !0,
-          container1Class: "swiper-zoom-container1",
+          paneClass: "swiper-zoom-pane",
           zoomedSlideClass: "swiper-slide-zoomed",
         },
       }),
@@ -4628,11 +4627,11 @@
         ((u.$slideEl = d(t.target).closest(`.${e.params.slideClass}`)),
         0 === u.$slideEl.length && (u.$slideEl = e.slides.eq(e.activeIndex)),
         (u.$imageEl = u.$slideEl
-          .find(`.${a.container1Class}`)
+          .find(`.${a.paneClass}`)
           .eq(0)
           .find("picture, img, svg, canvas, .swiper-zoom-target")
           .eq(0)),
-        (u.$imageWrapEl = u.$imageEl.parent(`.${a.container1Class}`)),
+        (u.$imageWrapEl = u.$imageEl.parent(`.${a.paneClass}`)),
         (u.maxRatio = u.$imageWrapEl.attr("data-swiper-zoom") || a.maxRatio),
         0 !== u.$imageWrapEl.length)
           ? (u.$imageEl && u.$imageEl.transition(0), (c = !0))
@@ -4789,11 +4788,11 @@
                   ))
                 : (u.$slideEl = e.slides.eq(e.activeIndex))),
             (u.$imageEl = u.$slideEl
-              .find(`.${a.container1Class}`)
+              .find(`.${a.paneClass}`)
               .eq(0)
               .find("picture, img, svg, canvas, .swiper-zoom-target")
               .eq(0)),
-            (u.$imageWrapEl = u.$imageEl.parent(`.${a.container1Class}`))),
+            (u.$imageWrapEl = u.$imageEl.parent(`.${a.paneClass}`))),
           !u.$imageEl ||
             0 === u.$imageEl.length ||
             !u.$imageWrapEl ||
@@ -4851,11 +4850,11 @@
               ))
             : (u.$slideEl = e.slides.eq(e.activeIndex)),
           (u.$imageEl = u.$slideEl
-            .find(`.${s.container1Class}`)
+            .find(`.${s.paneClass}`)
             .eq(0)
             .find("picture, img, svg, canvas, .swiper-zoom-target")
             .eq(0)),
-          (u.$imageWrapEl = u.$imageEl.parent(`.${s.container1Class}`))),
+          (u.$imageWrapEl = u.$imageEl.parent(`.${s.paneClass}`))),
           u.$imageEl &&
             0 !== u.$imageEl.length &&
             u.$imageWrapEl &&
@@ -4922,7 +4921,7 @@
               e.$wrapperEl.on(e.touchEvents.cancel, r, x, a)),
           e.$wrapperEl.on(
             e.touchEvents.move,
-            `.${e.params.zoom.container1Class}`,
+            `.${e.params.zoom.paneClass}`,
             y,
             i
           );
@@ -4945,7 +4944,7 @@
               e.$wrapperEl.off(e.touchEvents.cancel, r, x, a)),
           e.$wrapperEl.off(
             e.touchEvents.move,
-            `.${e.params.zoom.container1Class}`,
+            `.${e.params.zoom.paneClass}`,
             y,
             i
           );
@@ -5314,7 +5313,7 @@
                       : new a(e.snapGrid, t.snapGrid));
                 })(t),
                 (n = -e.controller.spline.interpolate(-s))),
-                (n && "container1" !== e.params.controller.by) ||
+                (n && "pane" !== e.params.controller.by) ||
                   ((r =
                     (t.maxTranslate() - t.minTranslate()) /
                     (e.maxTranslate() - e.minTranslate())),
@@ -5368,8 +5367,8 @@
           lastSlideMessage: "This is the last slide",
           paginationBulletMessage: "Go to slide {{index}}",
           slideLabelMessage: "{{index}} / {{slidesLength}}",
-          container1Message: null,
-          container1RoleDescriptionMessage: null,
+          paneMessage: null,
+          paneRoleDescriptionMessage: null,
           itemRoleDescriptionMessage: null,
           slideRole: "group",
         },
@@ -5444,9 +5443,8 @@
         const t = e.params.a11y;
         e.$el.append(a);
         const s = e.$el;
-        t.container1RoleDescriptionMessage &&
-          o(s, t.container1RoleDescriptionMessage),
-          t.container1Message && p(s, t.container1Message);
+        t.paneRoleDescriptionMessage && o(s, t.paneRoleDescriptionMessage),
+          t.paneMessage && p(s, t.paneMessage);
         const i = e.$wrapperEl,
           r =
             i.attr("id") ||
@@ -5868,7 +5866,7 @@
           multipleActiveThumbs: !0,
           autoScrollOffset: 0,
           slideThumbActiveClass: "swiper-slide-thumb-active",
-          thumbscontainer1Class: "swiper-thumbs",
+          thumbspaneClass: "swiper-thumbs",
         },
       });
       let a = !1,
@@ -5931,7 +5929,7 @@
             (i = !0);
         }
         return (
-          e.thumbs.swiper.$el.addClass(e.params.thumbs.thumbscontainer1Class),
+          e.thumbs.swiper.$el.addClass(e.params.thumbs.thumbspaneClass),
           e.thumbs.swiper.on("tap", r),
           !0
         );
