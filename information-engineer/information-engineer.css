@@ -801,7 +801,7 @@ footer .footer-head .title .ja {
   }
 }
 
-footer .footer-head .title .en1 {
+footer .footer-head .title .entry-letter {
   color: #2abc8f;
   font-size: 227px;
   font-family: "Rajdhani", sans-serif;
@@ -812,7 +812,7 @@ footer .footer-head .title .en1 {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .en1 {
+  footer .footer-head .title .entry-letter {
     font-size: 94px;
     margin-top: 10px;
     margin-left: 14px;
@@ -1101,10 +1101,10 @@ footer .footer-body-wrapper .info {
 }
 
 .information-page
-.entry
-.container1
-.entry-btn-wrapper
-.entry-link:not(:first-child) {
+  .entry
+  .container1
+  .entry-btn-wrapper
+  .entry-link:not(:first-child) {
   margin-top: 15px;
 }
 
@@ -1172,10 +1172,10 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .information-page
-.flow
-.container1
-.content-group
-.content:not(:first-child) {
+    .flow
+    .container1
+    .content-group
+    .content:not(:first-child) {
     margin-top: 116px;
   }
 }
@@ -1232,22 +1232,22 @@ footer .footer-body-wrapper .info {
 }
 
 .information-page
-.flow
-.container1
-.content-group
-.content
-ol
-li:not(:last-child) {
+  .flow
+  .container1
+  .content-group
+  .content
+  ol
+  li:not(:last-child) {
   height: 122px;
 }
 
 .information-page
-.flow
-.container1
-.content-group
-.content
-ol
-li:not(:last-child)::after {
+  .flow
+  .container1
+  .content-group
+  .content
+  ol
+  li:not(:last-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -1263,12 +1263,12 @@ li:not(:last-child)::after {
 
 @media (max-width: 768px) {
   .information-page
-.flow
-.container1
-.content-group
-.content
-ol
-li:not(:last-child)::after {
+    .flow
+    .container1
+    .content-group
+    .content
+    ol
+    li:not(:last-child)::after {
     height: 64px;
   }
 }

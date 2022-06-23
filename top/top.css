@@ -802,7 +802,7 @@ footer .footer-head .title .ja {
   }
 }
 
-footer .footer-head .title .en1 {
+footer .footer-head .title .entry-letter {
   color: #2abc8f;
   font-size: 227px;
   font-family: "Rajdhani", sans-serif;
@@ -813,7 +813,7 @@ footer .footer-head .title .en1 {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .en1 {
+  footer .footer-head .title .entry-letter {
     font-size: 94px;
     margin-top: 10px;
     margin-left: 14px;
@@ -1720,34 +1720,34 @@ footer .footer-body-wrapper .info {
 }
 
 .top-page
-.goodpoint
-.content
-.container1
-.comment-item:nth-child(4n + 1)::before {
+  .goodpoint
+  .content
+  .container1
+  .comment-item:nth-child(4n + 1)::before {
   background-image: url("/img/top-goodpoint-1.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container1
-.comment-item:nth-child(4n + 2)::before {
+  .goodpoint
+  .content
+  .container1
+  .comment-item:nth-child(4n + 2)::before {
   background-image: url("/img/top-goodpoint-2.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container1
-.comment-item:nth-child(4n + 3)::before {
+  .goodpoint
+  .content
+  .container1
+  .comment-item:nth-child(4n + 3)::before {
   background-image: url("/img/top-goodpoint-3.svg");
 }
 
 .top-page
-.goodpoint
-.content
-.container1
-.comment-item:nth-child(4n + 4)::before {
+  .goodpoint
+  .content
+  .container1
+  .comment-item:nth-child(4n + 4)::before {
   background-image: url("/img/top-goodpoint-4.svg");
 }
 
@@ -1763,10 +1763,10 @@ footer .footer-body-wrapper .info {
 
 @media (max-width: 768px) {
   .top-page
-.goodpoint
-.content
-.container1
-.comment-item:not(:nth-child(n + 2)) {
+    .goodpoint
+    .content
+    .container1
+    .comment-item:not(:nth-child(n + 2)) {
     margin-bottom: 75px;
   }
 }
@@ -2006,10 +2006,10 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content:not(:first-child) {
+  .business
+  .container1
+  .business-group
+  .business-content:not(:first-child) {
   margin-top: 80px;
 }
 
@@ -2031,11 +2031,11 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content
-p.example::before {
+  .business
+  .container1
+  .business-group
+  .business-content
+  p.example::before {
   content: "例）";
   display: block;
   margin-right: 1em;
@@ -2052,12 +2052,12 @@ p.example::before {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content
-p.tool
-span {
+  .business
+  .container1
+  .business-group
+  .business-content
+  p.tool
+  span {
   color: #2abc8f;
 }
 

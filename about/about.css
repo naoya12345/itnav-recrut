@@ -802,7 +802,7 @@ footer .footer-head .title .ja {
   }
 }
 
-footer .footer-head .title .en1 {
+footer .footer-head .title .entry-letter {
   color: #2abc8f;
   font-size: 227px;
   font-family: "Rajdhani", sans-serif;
@@ -813,7 +813,7 @@ footer .footer-head .title .en1 {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .en1 {
+  footer .footer-head .title .entry-letter {
     font-size: 94px;
     margin-top: 10px;
     margin-left: 14px;
@@ -1273,10 +1273,10 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content:not(:first-child) {
+  .business
+  .container1
+  .business-group
+  .business-content:not(:first-child) {
   margin-top: 80px;
 }
 
@@ -1298,11 +1298,11 @@ footer .footer-body-wrapper .info {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content
-p.example::before {
+  .business
+  .container1
+  .business-group
+  .business-content
+  p.example::before {
   content: "例）";
   display: block;
   margin-right: 1em;
@@ -1319,12 +1319,12 @@ p.example::before {
 }
 
 .about-page
-.business
-.container1
-.business-group
-.business-content
-p.tool
-span {
+  .business
+  .container1
+  .business-group
+  .business-content
+  p.tool
+  span {
   color: #2abc8f;
 }
 /*# sourceMappingURL=about.css.map */

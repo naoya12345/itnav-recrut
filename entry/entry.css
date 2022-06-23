@@ -802,7 +802,7 @@ footer .footer-head .title .ja {
   }
 }
 
-footer .footer-head .title .en1 {
+footer .footer-head .title .entry-letter {
   color: #2abc8f;
   font-size: 227px;
   font-family: "Rajdhani", sans-serif;
@@ -813,7 +813,7 @@ footer .footer-head .title .en1 {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .en1 {
+  footer .footer-head .title .entry-letter {
     font-size: 94px;
     margin-top: 10px;
     margin-left: 14px;
@@ -1207,21 +1207,21 @@ footer .footer-body-wrapper .info {
 }
 
 .entry-page
-.entry
-.container1
-.form-chunk
-.check-group-item
-input[type="checkbox"] {
+  .entry
+  .container1
+  .form-chunk
+  .check-group-item
+  input[type="checkbox"] {
   display: none;
 }
 
 .entry-page
-.entry
-.container1
-.form-chunk
-.check-group-item
-input[type="checkbox"]:checked
-+ label::before {
+  .entry
+  .container1
+  .form-chunk
+  .check-group-item
+  input[type="checkbox"]:checked
+  + label::before {
   background-color: #2abc8f;
 }
 
