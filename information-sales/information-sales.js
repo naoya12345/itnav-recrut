@@ -17,7 +17,7 @@ const writeHeader = (getData) => {
   };
 };
 
-const headerUrl = "infdex.html";
+const headerUrl = "index.html";
 
 fetch(headerUrl)
   .then((response) => response.text())
