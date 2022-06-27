@@ -1205,7 +1205,7 @@ footer .footer-body-wrapper .info {
   margin-left: 16px;
 }
 
-.top-page .firstview .scroll {
+.top-page .scroll {
   margin-top: 343px;
   margin-left: 37px;
   -webkit-box-align: center;
@@ -1422,14 +1422,14 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.top-page .message .pane .content p {
+.top-page .message p {
   font-size: 18px;
   line-height: 45px;
   margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .pane .content p {
+  .top-page .message p {
     font-size: 16px;
     line-height: 28px;
     margin-top: 20px;
