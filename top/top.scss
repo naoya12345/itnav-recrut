@@ -187,38 +187,38 @@
   transform: rotate(90deg);
 }
 
-.top-page section .section-title {
+.section-title {
   margin-left: 120px;
   line-height: 1;
 }
 
 @media (max-width: 768px) {
-  .top-page section .section-title {
+  .section-title {
     margin-left: 20px;
   }
 }
 
-.top-page section .section-title .en {
+.section-title .en {
   font-family: "Rajdhani", sans-serif;
   font-size: 104px;
 }
 
 @media (max-width: 768px) {
-  .top-page section .section-title .en {
+  .section-title .en {
     font-size: 55px;
   }
 }
 
-.top-page section .section-title .en::first-letter {
+.section-title .en::first-letter {
   color: #2abc8f;
 }
 
-.top-page section .section-title .ja {
+.section-title .ja {
   font-size: 16px;
   margin-top: 8px;
 }
 
-.top-page section .section-title .ja::before {
+.section-title .ja::before {
   content: "";
   display: inline-block;
   width: 9px;
@@ -229,7 +229,7 @@
 }
 
 @media (max-width: 768px) {
-  .top-page section .section-title .ja::before {
+  .section-title .ja::before {
     margin-left: 0;
   }
 }
