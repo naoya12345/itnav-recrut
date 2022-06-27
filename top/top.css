@@ -1077,7 +1077,7 @@ footer .footer-body-wrapper .info {
   }
 }
 
-.top-page .firstview .copy .text {
+.top-page .text {
   position: relative;
   font-family: "Rajdhani", sans-serif;
   font-size: 12px;
@@ -1088,13 +1088,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .top-page .firstview .copy .text {
+  .top-page .text {
     color: #fff;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
   }
 }
 
-.top-page .firstview .copy .text::before {
+.top-page .text::before {
   content: "";
   position: absolute;
   left: 0;
