@@ -1616,7 +1616,7 @@ section .see-more::after {
   }
 }
 
-.member-group .member .see-more {
+.member-group .see-more {
   margin-top: -35px;
 }
 
