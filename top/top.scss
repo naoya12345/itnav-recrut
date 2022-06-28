@@ -347,25 +347,25 @@ section .see-more::after {
   }
 }
 
-.message .pane .content {
+.message .content {
   width: 55.5%;
   margin-top: 116px;
 }
 
 @media (max-width: 768px) {
-  .message .pane .content {
+  .message .content {
     width: 61%;
     margin-top: 95px;
   }
 }
 
-.message .pane .content .copy {
+.message .copy {
   width: 441px;
   height: 96px;
 }
 
 @media (max-width: 768px) {
-  .message .pane .content .copy {
+  .message .copy {
     width: 245px;
     height: 90px;
   }
@@ -385,12 +385,12 @@ section .see-more::after {
   }
 }
 
-.pane .content .see-more {
+.pane .see-more {
   margin-top: 45px;
 }
 
 @media (max-width: 768px) {
-  .pane .content .see-more {
+  .pane .see-more {
     margin-top: 22px;
   }
 }
