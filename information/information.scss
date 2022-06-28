@@ -369,26 +369,26 @@
   }
 }
 
-.top-page .message .pane .content p {
+.top-page p {
   font-size: 18px;
   line-height: 45px;
   margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .pane .content p {
+  .top-page p {
     font-size: 16px;
     line-height: 28px;
     margin-top: 20px;
   }
 }
 
-.top-page .message .pane .content .see-more {
+.top-page .see-more {
   margin-top: 45px;
 }
 
 @media (max-width: 768px) {
-  .top-page .message .pane .content .see-more {
+  .top-page .see-more {
     margin-top: 22px;
   }
 }
