@@ -1670,7 +1670,7 @@ section .see-more::after {
   }
 }
 
-.goodpoint .content .pane .comment-item {
+.goodpoint .comment-item {
   position: relative;
   width: 260px;
   height: 260px;
@@ -1690,7 +1690,7 @@ section .see-more::after {
 }
 
 @media (max-width: 768px) {
-  .goodpoint .content .pane .comment-item {
+  .goodpoint .comment-item {
     width: 37vw;
     height: 37vw;
     font-size: 13px;
@@ -1699,7 +1699,7 @@ section .see-more::after {
   }
 }
 
-.goodpoint .content .pane .comment-item::before {
+.goodpoint .comment-item::before {
   content: "";
   position: absolute;
   right: -55px;
@@ -1740,13 +1740,13 @@ section .see-more::after {
 }
 
 @media (max-width: 768px) {
-  .content .pane .comment-item:nth-child(even) {
+  .content .comment-item:nth-child(even) {
     margin-top: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .content .pane .comment-item:not(:nth-child(n + 2)) {
+  .content .comment-item:not(:nth-child(n + 2)) {
     margin-bottom: 75px;
   }
 }
