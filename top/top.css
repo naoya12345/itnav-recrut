@@ -1051,18 +1051,18 @@ footer .footer-body-wrapper .info {
   overflow-x: hidden;
 }
 
-.top-page .firstview {
+.firstview {
   position: relative;
   padding-left: 320px;
 }
 
 @media (max-width: 768px) {
-  .top-page .firstview {
+  .firstview {
     padding-left: 0;
   }
 }
 
-.top-page .firstview .copy {
+.firstview .copy {
   position: absolute;
   top: 76px;
   left: 83px;
@@ -1070,13 +1070,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .top-page .firstview .copy {
+  .firstview .copy {
     top: 525px;
     left: 0;
   }
 }
 
-.top-page .text {
+.text {
   position: relative;
   font-family: "Rajdhani", sans-serif;
   font-size: 12px;
@@ -1087,13 +1087,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .top-page .text {
+  .text {
     color: #fff;
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
   }
 }
 
-.top-page .text::before {
+.text::before {
   content: "";
   position: absolute;
   left: 0;
