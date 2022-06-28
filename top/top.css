@@ -1471,7 +1471,7 @@ section .see-more::after {
 
 @media (max-width: 768px) {
   .interview::before,
-  .top-page .interview::after {
+  .interview::after {
     top: 233px;
     width: calc(100% - 20px);
     height: 285px;
