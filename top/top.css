@@ -1508,21 +1508,21 @@ section .see-more::after {
   }
 }
 
-.interview .member-group .member {
+.interview .member {
   position: relative;
 }
 
-.interview .member-group .member:not(:first-child) {
+.interview .member:not(:first-child) {
   margin-left: 54px;
 }
 
 @media (max-width: 768px) {
-  .interview .member-group .member:not(:first-child) {
+  .interview .member:not(:first-child) {
     margin-left: 15px;
   }
 }
 
-.member-group .member img {
+.member-group img {
   width: 380px;
   height: 380px;
   -o-object-fit: cover;
@@ -1530,13 +1530,13 @@ section .see-more::after {
 }
 
 @media (max-width: 768px) {
-  .member-group .member img {
+  .member-group img {
     width: 315px;
     height: 315px;
   }
 }
 
-.member-group .member .about {
+.member-group .about {
   position: relative;
   width: 334px;
   background-color: #fff;
@@ -1651,7 +1651,7 @@ section .see-more::after {
   }
 }
 
-.goodpoint .content .pane {
+.goodpoint .pane {
   width: 1200px;
   -webkit-transform: translateX(calc(20px / 2));
   transform: translateX(calc(20px / 2));
@@ -1661,7 +1661,7 @@ section .see-more::after {
 }
 
 @media (max-width: 768px) {
-  .goodpoint .content .pane {
+  .goodpoint .pane {
     width: calc(100% - (20px * 2));
     -webkit-transform: none;
     transform: none;
