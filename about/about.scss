@@ -1,34 +1,34 @@
 @charset "UTF-8";
 @import "../index";
 
-.about-page .page-title .pane .about-desc {
+.about-desc {
   font-size: 18px;
   line-height: 45px;
   margin-top: 100px;
 }
 
 @media (max-width: 768px) {
-  .about-page .page-title .pane .about-desc {
+  .about-desc {
     font-size: 16px;
     line-height: 28px;
     margin-top: 40px;
   }
 }
 
-.about-page .mvv {
+.mvv {
   position: relative;
   padding: 210px 0;
   margin-top: 110px;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv {
+  .mvv {
     padding: 42px 0;
     margin-top: 58px;
   }
 }
 
-.about-page .mvv::before {
+.mvv::before {
   top: 0;
   right: 0;
   width: 44%;
@@ -40,19 +40,19 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv::before {
+  .mvv::before {
     width: 78%;
   }
 }
 
-.about-page .mvv .pane {
+.mvv .pane {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .pane {
+  .mvv .pane {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -60,16 +60,16 @@
   }
 }
 
-.about-page .mvv .pane:not(:first-child) {
+.mvv .pane:not(:first-child) {
   margin-top: 115px;
 }
 
-.about-page .mvv .pane-text {
+.mvv .pane-text {
   width: 680px;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .pane-text {
+  .mvv .pane-text {
     margin-top: 32px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -77,32 +77,32 @@
   }
 }
 
-.about-page .mvv .mission .pane-text {
+.mission .pane-text {
   font-size: 32px;
   font-weight: 700;
   line-height: 2em;
 }
 
-.about-page .mvv .vision .pane-text {
+.vision .pane-text {
   font-size: 24px;
   font-weight: 700;
   line-height: 48px;
 }
 
-.about-page .mvv .value .pane-text {
+.value .pane-text {
   font-size: 18px;
   font-weight: 500;
   line-height: 2em;
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .value .pane-text {
+  .value .pane-text {
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .about-page .mvv .value .pane-text .main {
+  .value .pane-text .main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -110,11 +110,11 @@
   }
 }
 
-.about-page .mvv .value .pane-text .main:not(:first-of-type) {
+.pane-text .main:not(:first-of-type) {
   margin-top: 48px;
 }
 
-.about-page .mvv .value .pane-text .main .en {
+.pane-text .main .en {
   font-size: 32px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
@@ -122,17 +122,17 @@
   margin-right: 16px;
 }
 
-.about-page .mvv .value .pane-text .main .ja {
+.value .pane-text .main .ja {
   font-size: 16px;
   font-weight: 700;
   color: #00000070;
 }
 
-.about-page .mvv .value .pane-text .sub {
+.value .pane-text .sub {
   margin-top: 8px;
 }
 
-.about-page .message .pane {
+.message .pane {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -140,7 +140,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .message .pane {
+  .message .pane {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -149,38 +149,38 @@
   }
 }
 
-.about-page .message .pane .message-title .profile-img {
+.message-title .profile-img {
   width: 230px;
   height: 290px;
   margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-  .about-page .message .pane .message-title .profile-img {
+  .message-title .profile-img {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.about-page .message .pane .message-title .profile-name {
+.message-title .profile-name {
   text-align: center;
   margin-top: 24px;
   font-size: 22px;
 }
 
-.about-page .message .pane .message-title .profile-name .kana {
+.message-title .profile-name .kana {
   font-size: 14px;
   margin-top: 12px;
 }
 
-.about-page .message .pane .message-text {
+.message-text {
   width: 680px;
   font-size: 18px;
   line-height: 45px;
 }
 
 @media (max-width: 768px) {
-  .about-page .message .pane .message-text {
+  .message-text {
     margin-top: 44px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -190,7 +190,7 @@
   }
 }
 
-.about-page .business .pane {
+.business .pane {
   margin-top: 230px;
   margin-bottom: 300px;
   -webkit-box-pack: justify;
@@ -199,20 +199,20 @@
 }
 
 @media (max-width: 768px) {
-  .about-page .business .pane {
+  .business .pane {
     margin-top: 100px;
     margin-bottom: 160px;
     display: block;
   }
 }
 
-.about-page .business .pane .business-group .business-content {
+.business-content {
   width: 680px;
   font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .pane .business-group .business-content {
+  .business-content {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -221,52 +221,43 @@
   }
 }
 
-.about-page
-  .business
-  .pane
-  .business-group
-  .business-content:not(:first-child) {
+.business-content:not(:first-child) {
   margin-top: 80px;
 }
 
-.about-page .business .pane .business-group .business-content h3 {
+.business-content h3 {
   font-weight: 700;
   padding-bottom: 20px;
   border-bottom: 1px solid #d5d5d5;
   margin-bottom: 24px;
 }
 
-.about-page .business .pane .business-group .business-content p {
+.business-content p {
   line-height: 45px;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .pane .business-group .business-content p {
+  .business-content p {
     line-height: 28px;
   }
 }
 
-.about-page
-  .business
-  .pane
-  .business-group
-  .business-content
-  p.example::before {
+.business-content p.example::before {
   content: "例）";
   display: block;
   margin-right: 1em;
 }
 
-.about-page .business .pane .business-group .business-content p.tool {
+.business-content p.tool {
   margin-top: 2em;
 }
 
 @media (max-width: 768px) {
-  .about-page .business .pane .business-group .business-content p.tool {
+  .business-content p.tool {
     margin-top: 1.3em;
   }
 }
 
-.about-page .business .pane .business-group .business-content p.tool span {
+.business-content p.tool span {
   color: #2abc8f;
 }
