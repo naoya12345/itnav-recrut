@@ -1051,20 +1051,20 @@ footer .footer-body-wrapper .info {
   overflow-x: hidden;
 }
 
-.goodpoint-page .good-point {
+.good-point {
   margin-top: 116px;
   position: relative;
   margin-bottom: 450px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point {
+  .good-point {
     margin-top: 55px;
     margin-bottom: 270px;
   }
 }
 
-.goodpoint-page .good-point::before {
+.good-point::before {
   content: "";
   position: absolute;
   top: 72px;
@@ -1077,20 +1077,20 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point::before {
+  .good-point::before {
     width: 78%;
     top: 38px;
   }
 }
 
-.goodpoint-page .good-point .pane ul {
+.pane ul {
   list-style: none;
   font-size: 18px;
   line-height: 36px;
   text-align: center;
 }
 
-.goodpoint-page .good-point .pane ul li {
+.good-point .pane ul li {
   border: solid 3px #e1f5ef;
   background-color: #fff;
   width: 700px;
@@ -1100,13 +1100,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li {
+  .good-point .pane ul li {
     width: 95%;
     padding: 33px 40px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li::before {
+.pane ul li::before {
   content: "";
   position: absolute;
   bottom: -26px;
@@ -1118,79 +1118,79 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li::before {
+  .pane ul li::before {
     width: 124px;
     height: 108px;
     bottom: -10px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:not(:first-child) {
+.pane ul li:not(:first-child) {
   margin-top: 92px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li:not(:first-child) {
+  .pane ul li:not(:first-child) {
     margin-top: 45px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(odd) {
+.pane ul li:nth-child(odd) {
   border-top-left-radius: 0;
   padding-left: 160px;
   margin-left: auto;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li:nth-child(odd) {
+  .pane ul li:nth-child(odd) {
     padding-left: 105px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(odd)::before {
+.pane ul li:nth-child(odd)::before {
   left: -50px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li:nth-child(odd)::before {
+  .pane ul li:nth-child(odd)::before {
     left: -25px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(even) {
+.pane ul li:nth-child(even) {
   border-top-right-radius: 0;
   padding-right: 160px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li:nth-child(even) {
+  .pane ul li:nth-child(even) {
     padding-right: 105px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(even)::before {
+.pane ul li:nth-child(even)::before {
   right: -50px;
 }
 
 @media (max-width: 768px) {
-  .goodpoint-page .good-point .pane ul li:nth-child(even)::before {
+  .pane ul li:nth-child(even)::before {
     right: -25px;
   }
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(4n + 1)::before {
+.pane ul li:nth-child(4n + 1)::before {
   background-image: url("/img/goodpoint-1.png");
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(4n + 2)::before {
+.pane ul li:nth-child(4n + 2)::before {
   background-image: url("/img/goodpoint-2.png");
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(4n + 3)::before {
+.pane ul li:nth-child(4n + 3)::before {
   background-image: url("/img/goodpoint-3.png");
 }
 
-.goodpoint-page .good-point .pane ul li:nth-child(4n + 4)::before {
+.pane ul li:nth-child(4n + 4)::before {
   background-image: url("/img/goodpoint-4.png");
 }
 /*# sourceMappingURL=goodpoint.css.map */
