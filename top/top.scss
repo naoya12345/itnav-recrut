@@ -235,7 +235,7 @@
 }
 
 @media (max-width: 768px) {
-   .section-head {
+  .section-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -441,7 +441,7 @@ section .see-more::after {
   mix-blend-mode: screen;
 }
 
-.interview .member-group {
+.member-group {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -450,7 +450,7 @@ section .see-more::after {
 }
 
 @media (max-width: 768px) {
-  .interview .member-group {
+  .member-group {
     width: 100%;
     margin-top: 97px;
     padding-left: 40px;
