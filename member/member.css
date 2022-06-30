@@ -1271,13 +1271,13 @@ footer .footer-body-wrapper .info {
   margin-top: 100px;
 }
 
-.question-list .question h3 {
+.question h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.question-list .question h3 .num {
+.question h3 .num {
   width: 98px;
   font-size: 54px;
   font-family: "Rajdhani", sans-serif;
@@ -1285,18 +1285,18 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .question-list .question h3 .num {
+  .question h3 .num {
     width: 57px;
     line-height: 51px;
     font-size: 40px;
   }
 }
 
-.question-list .question h3 .num::first-letter {
+.question h3 .num::first-letter {
   color: #2abc8f;
 }
 
-.question-list .question h3 .text {
+.question h3 .text {
   position: relative;
   font-size: 25px;
   font-weight: 700;
@@ -1304,14 +1304,14 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .interview-page .pane .question-list .question h3 .text {
+  .question h3 .text {
     font-size: 22px;
     line-height: 32px;
     padding-left: 23px;
   }
 }
 
-.question-list .question h3 .text::before {
+.question h3 .text::before {
   content: "";
   position: absolute;
   top: 55%;
@@ -1323,7 +1323,7 @@ footer .footer-body-wrapper .info {
   background-color: #2abc8f;
 }
 
-.question-list .question p {
+.question p {
   font-size: 18px;
   line-height: 45px;
   padding-left: 98px;
@@ -1331,7 +1331,7 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 768px) {
-  .question-list .question p {
+  .question p {
     font-size: 16px;
     line-height: 28px;
     padding-left: 54px;
