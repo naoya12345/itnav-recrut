@@ -1,40 +1,40 @@
 @charset "UTF-8";
 @import "../index";
 
-.entry-page .entry {
+.entry {
   margin-top: 108px;
   margin-bottom: 172px;
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry {
+  .entry {
     margin-top: 65px;
     margin-bottom: 60px;
   }
 }
 
-.entry-page .entry .pane {
+.pane {
   width: 770px;
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane {
+  .pane {
     width: calc(100% - (20px * 2));
   }
 }
 
-.entry-page .entry .pane .form-chunk:not(:first-child) {
+.form-chunk:not(:first-child) {
   margin-top: 45px;
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane .form-chunk:not(:first-child) {
+  .form-chunk:not(:first-child) {
     margin-top: 42px;
   }
 }
 
-.entry-page .entry .pane .form-chunk label,
-.entry-page .entry .pane .form-chunk p.label {
+.form-chunk label,
+.form-chunk p.label {
   padding-bottom: 31px;
   display: block;
   font-size: 18px;
@@ -42,14 +42,14 @@
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane .form-chunk label,
-  .entry-page .entry .pane .form-chunk p.label {
+  .form-chunk label,
+  .form-chunk p.label {
     padding-bottom: 20px;
   }
 }
 
-.entry-page .entry .pane .form-chunk label.is-required::after,
-.entry-page .entry .pane .form-chunk p.label.is-required::after {
+.is-required::after,
+p.label.is-required::after {
   content: "必須";
   background-color: #f76464;
   color: #fff;
@@ -60,43 +60,37 @@
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane .form-chunk label.is-required::after,
-  .entry-page .entry .pane .form-chunk p.label.is-required::after {
+  .is-required::after,
+  p.label.is-required::after {
     margin-left: 14px;
   }
 }
 
-.entry-page .entry .pane .form-chunk label:not(:first-child),
-.entry-page .entry .pane .form-chunk p.label:not(:first-child) {
+label:not(:first-child),
+p.label:not(:first-child) {
   margin-bottom: 45px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group {
+.form-chunk .check-group {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: -25px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item {
+.check-group-item {
   margin-top: 25px;
   margin-right: 25px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item input[type="checkbox"] {
+.check-group-item input[type="checkbox"] {
   display: none;
 }
 
-.entry-page
-  .entry
-  .pane
-  .form-chunk
-  .check-group-item
-  input[type="checkbox"]:checked
-  + label::before {
+.check-group-item input[type="checkbox"]:checked + label::before {
   background-color: #2abc8f;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label {
+.check-group-item label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +102,7 @@
   margin-bottom: 0;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label::before {
+.check-group-item label::before {
   content: "";
   position: relative;
   display: block;
@@ -119,7 +113,7 @@
   margin-right: 8px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label::after {
+.check-group-item label::after {
   content: "";
   background-image: url("/img/entry-check-item.png");
   background-repeat: no-repeat;
@@ -131,8 +125,8 @@
   left: 6px;
 }
 
-.entry-page .entry .pane .form-chunk input[type="text"],
-.entry-page .entry .pane .form-chunk input[type="email"] {
+.form-chunk input[type="text"],
+.form-chunk input[type="email"] {
   width: 100%;
   height: 50px;
   background-color: #efefef;
@@ -142,7 +136,7 @@
   border-radius: 3px;
 }
 
-.entry-page .entry .pane .form-chunk .drop-down {
+.drop-down {
   font-size: 18px;
   font-weight: 400;
   width: 222px;
@@ -163,12 +157,12 @@
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane .form-chunk .drop-down {
+  .drop-down {
     width: 100%;
   }
 }
 
-.entry-page .entry .pane .form-chunk textarea {
+.form-chunk textarea {
   border-radius: 3px;
   width: 100%;
   height: 267px;
@@ -180,17 +174,17 @@
   resize: none;
 }
 
-.entry-page .entry .pane .schedule-content {
+.schedule-content {
   margin-top: 45px;
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .pane .schedule-content {
+  .schedule-content {
     margin-top: 42px;
   }
 }
 
-.entry-page .entry .entry-submit {
+.entry-submit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -201,7 +195,7 @@
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .entry-submit {
+  .entry-submit {
     width: 100%;
     font-size: 25px;
     line-height: 32px;
@@ -210,7 +204,7 @@
   }
 }
 
-.entry-page .entry .entry-submit input[type="submit"] {
+input[type="submit"] {
   display: block;
   width: 634px;
   font-size: 22px;
@@ -226,7 +220,7 @@
 }
 
 @media (max-width: 768px) {
-  .entry-page .entry .entry-submit input[type="submit"] {
+  input[type="submit"] {
     width: 100%;
     font-size: 19px;
     line-height: 32px;
@@ -234,50 +228,50 @@
   }
 }
 
-.entry-confirm-page .form-confirm {
+.form-confirm {
   margin-top: 110px;
   margin-bottom: 172px;
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .form-confirm {
+  .form-confirm {
     margin-top: 62px;
     margin-bottom: 60px;
   }
 }
 
-.entry-confirm-page .form-confirm .message .text {
+.message .text {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
 
-.entry-confirm-page .form-confirm .form {
+.form {
   width: 770px;
   margin-top: 26px;
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .form-confirm .form {
+  .form {
     width: calc(100% - (20px * 2));
   }
 }
 
-.entry-confirm-page .form-confirm .form-chunk:not(:first-child) {
+.form-chunk:not(:first-child) {
   margin-top: 32px;
 }
 
-.entry-confirm-page .form-confirm .form-chunk * {
+.form-chunk * {
   width: 100%;
   font-size: 18px;
 }
 
-.entry-confirm-page .form-confirm .form-chunk label {
+.form-chunk label {
   font-weight: 500;
 }
 
-.entry-confirm-page .form-confirm .form-chunk input,
-.entry-confirm-page .form-confirm .form-chunk textarea {
+.form-chunk input,
+.form-chunk textarea {
   pointer-events: none;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -291,17 +285,17 @@
   margin-top: 8px;
 }
 
-.entry-confirm-page .form-confirm .form .btn-wrapper {
+.btn-wrapper {
   margin-top: 80px;
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .form-confirm .form .btn-wrapper {
+  .btn-wrapper {
     margin-top: 62px;
   }
 }
 
-.entry-confirm-page .form-confirm .form .btn-wrapper input {
+.btn-wrapper input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -317,24 +311,24 @@
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .form-confirm .form .btn-wrapper input {
+  .btn-wrapper input {
     height: 78px;
     font-size: 19px;
   }
 }
 
-.entry-confirm-page .form-confirm .form .btn-wrapper input[type="button"] {
+.btn-wrapper input[type="button"] {
   color: #2abc8f;
   border: 2px solid #2abc8f;
 }
 
-.entry-confirm-page .form-confirm .form .btn-wrapper input[type="submit"] {
+.btn-wrapper input[type="submit"] {
   color: #fff;
   background-color: #2abc8f;
   margin-left: 20px;
 }
 
-.entry-confirm-page .complete {
+.complete {
   display: none;
   position: fixed;
   z-index: 2000;
@@ -351,13 +345,13 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.entry-confirm-page .complete.is-active {
+.complete.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.entry-confirm-page .complete-modal {
+.complete-modal {
   max-width: 700px;
   width: 100%;
   text-align: center;
@@ -365,27 +359,27 @@
   padding: 32px;
 }
 
-.entry-confirm-page .complete-modal * {
+.complete-modal * {
   display: block;
 }
 
-.entry-confirm-page .complete-modal *:not(:first-child) {
+.complete-modal *:not(:first-child) {
   margin-top: 32px;
 }
 
-.entry-confirm-page .complete-modal .message {
+.message {
   font-size: 18px;
   line-height: 32px;
   line-break: strict;
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .complete-modal .message {
+  .message {
     font-size: 16px;
   }
 }
 
-.entry-confirm-page .complete-modal .back-top {
+.back-top {
   font-size: 22px;
   font-weight: 700;
   line-height: 70px;
@@ -394,18 +388,18 @@
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .complete-modal .back-top {
+  .back-top {
     font-size: 19px;
     line-height: 60px;
   }
 }
 
-.entry-confirm-page .complete-modal .notice {
+.complete-modal .notice {
   font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  .entry-confirm-page .complete-modal .notice {
+  .complete-modal .notice {
     font-size: 12px;
   }
 }
