@@ -757,7 +757,7 @@ header .menu-elm nav a.link-entry:hover::after {
   right: -1.5em;
 }
 
-footer .footer-head {
+.footer-head {
   background-image: url(/img/footer-head-copy.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -768,13 +768,13 @@ footer .footer-head {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head {
+  .footer-head {
     padding-top: 90px;
     padding-bottom: 78px;
   }
 }
 
-footer .footer-head .title {
+.footer-head .title {
   text-align: center;
   font-weight: 500;
   position: absolute;
@@ -785,22 +785,22 @@ footer .footer-head .title {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title {
+  .footer-head .title {
     top: -70px;
   }
 }
 
-footer .footer-head .title .ja {
+.footer-head .title .ja {
   font-size: 16px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .ja {
+  .footer-head .title .ja {
     font-size: 18px;
   }
 }
 
-footer .footer-head .title .entry-letter {
+.footer-head .title .entry-letter {
   color: #2abc8f;
   font-size: 227px;
   font-family: "Rajdhani", sans-serif;
@@ -811,26 +811,26 @@ footer .footer-head .title .entry-letter {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .title .entry-letter {
+  .footer-head .title .entry-letter {
     font-size: 94px;
     margin-top: 10px;
     margin-left: 14px;
   }
 }
 
-footer .footer-head .copy {
+.footer-head .copy {
   width: 514px;
   height: 141px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .copy {
+  .footer-head .copy {
     width: 257px;
     height: 71px;
   }
 }
 
-footer .footer-head .link {
+.footer-head .link {
   width: 710px;
   display: block;
   font-size: 33px;
@@ -849,7 +849,7 @@ footer .footer-head .link {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .link {
+  .footer-head .link {
     font-size: 16px;
     width: calc(calc(100% - (20px * 2)) - (16px * 2));
     max-width: 375px;
@@ -858,7 +858,7 @@ footer .footer-head .link {
   }
 }
 
-footer .footer-head .link::before {
+.footer-head .link::before {
   content: "";
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -871,14 +871,14 @@ footer .footer-head .link::before {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .link::before {
+  .footer-head .link::before {
     width: 5px;
     height: 5px;
     margin-right: 8px;
   }
 }
 
-footer .footer-head .link::after {
+.footer-head .link::after {
   content: "";
   position: absolute;
   top: 49.5%;
@@ -895,51 +895,51 @@ footer .footer-head .link::after {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-head .link::after {
+  .footer-head .link::after {
     right: 18px;
     width: 10px;
     height: 10px;
   }
 }
 
-footer .footer-head .link:hover::after {
+.footer-head .link:hover::after {
   right: 60px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-footer .footer-body {
+.footer-body {
   background-color: rgba(42, 188, 143, 0.07);
   padding-top: 280px;
   padding-bottom: 173px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body {
+  .footer-body {
     padding-top: 70px;
     padding-bottom: 28px;
   }
 }
 
-footer .footer-body-wrapper {
+.footer-body-wrapper {
   width: calc(100% - 60px);
   max-width: 1680px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper {
+  .footer-body-wrapper {
     width: calc(100% - (20px * 2));
   }
 }
 
-footer .footer-body-wrapper .menu {
+.footer-body-wrapper .menu {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu {
+  .footer-body-wrapper .menu {
     -webkit-box-pack: normal;
     -ms-flex-pack: normal;
     justify-content: normal;
@@ -950,42 +950,42 @@ footer .footer-body-wrapper .menu {
   }
 }
 
-footer .footer-body-wrapper .menu .logo {
+.footer-body-wrapper .menu .logo {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-footer .footer-body-wrapper .menu .logo .img {
+.footer-body-wrapper .menu .logo .img {
   width: 116px;
   height: 39px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu .logo .img {
+  .footer-body-wrapper .menu .logo .img {
     width: 87px;
     height: 29px;
   }
 }
 
-footer .footer-body-wrapper .menu .logo .text {
+.footer-body-wrapper .menu .logo .text {
   margin-left: 20px;
   font-size: 11px;
   font-weight: 700;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu .logo .text {
+  .footer-body-wrapper .menu .logo .text {
     margin-left: 16px;
   }
 }
 
-footer .footer-body-wrapper .menu .addr-sp {
+.footer-body-wrapper .menu .addr-sp {
   display: none;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu .addr-sp {
+  .footer-body-wrapper .menu .addr-sp {
     display: block;
     font-size: 12px;
     line-height: 18px;
@@ -993,13 +993,13 @@ footer .footer-body-wrapper .menu .addr-sp {
   }
 }
 
-footer .footer-body-wrapper .menu nav {
+.footer-body-wrapper .menu nav {
   margin-top: -5px;
   margin-right: -30px;
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu nav {
+  .footer-body-wrapper .menu nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1010,7 +1010,7 @@ footer .footer-body-wrapper .menu nav {
   }
 }
 
-footer .footer-body-wrapper .menu nav a {
+.footer-body-wrapper .menu nav a {
   color: #222;
   font-size: 15px;
   font-family: "Rajdhani", "Noto Sans JP", sans-serif;
@@ -1018,15 +1018,15 @@ footer .footer-body-wrapper .menu nav a {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .menu nav a {
+  .footer-body-wrapper .menu nav a {
     padding: 22px 0;
   }
-  footer .footer-body-wrapper .menu nav a:not(:first-child) {
+  .footer-body-wrapper .menu nav a:not(:first-child) {
     border-top: 1px solid rgba(42, 188, 143, 0.5);
   }
 }
 
-footer .footer-body-wrapper .info {
+.footer-body-wrapper .info {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1035,13 +1035,13 @@ footer .footer-body-wrapper .info {
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .info {
+  .footer-body-wrapper .info {
     margin-top: 20px;
   }
 }
 
 @media (max-width: 1024px) {
-  footer .footer-body-wrapper .info .addr-pc {
+  .addr-pc {
     display: none;
   }
 }
