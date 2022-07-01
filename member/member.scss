@@ -138,22 +138,22 @@
   }
 }
 
-.desc .name > * {
+.name > * {
   color: #2abc8f;
 }
 
-.desc .name .ja {
+.name .ja {
   font-size: 18px;
   font-weight: 500;
 }
 
 @media (max-width: 768px) {
-  .desc .name .ja {
+  .name .ja {
     font-size: 14px;
   }
 }
 
-.desc .name .en {
+.name .en {
   font-family: "Rajdhani", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -161,13 +161,13 @@
 }
 
 @media (max-width: 768px) {
-  .desc .name .en {
+  .name .en {
     font-size: 16px;
     margin-left: 1em;
   }
 }
 
-.desc .name .gray {
+.name .gray {
   font-size: 16px;
   font-weight: 500;
   color: #a2a2a2;
@@ -175,7 +175,7 @@
 }
 
 @media (max-width: 768px) {
-  .desc .name .gray {
+  .name .gray {
     font-size: 14px;
   }
 }
