@@ -1267,7 +1267,7 @@ main {
   }
 }
 
-.question-list .question:not(:first-child) {
+.question:not(:first-child) {
   margin-top: 100px;
 }
 
