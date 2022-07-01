@@ -25,24 +25,24 @@
 }
 
 @media (max-width: 768px) {
-  .tab div {
+  .tab {
     font-size: 14px;
     padding: 15px 0;
   }
 }
 
-.tab div.is-active {
+.tab .is-active {
   color: #2abc8f;
   font-weight: 700;
   border-bottom: 3px solid #2abc8f;
 }
 
-.tab div:not(:first-child) {
+.tab :not(:first-child) {
   margin-left: 8px;
 }
 
 @media (max-width: 768px) {
-  .tab div:not(:first-child) {
+  .tab :not(:first-child) {
     margin-left: 4px;
   }
 }
@@ -80,7 +80,7 @@
   }
 }
 
-.content-section.is-active {
+.content-section .is-active {
   display: block;
 }
 
