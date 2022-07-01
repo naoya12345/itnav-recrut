@@ -424,7 +424,7 @@ main {
   font-weight: 700;
 }
 
-.menu-elm {
+header .menu-elm {
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -435,14 +435,14 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm {
+  header .menu-elm {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 }
 
-.menu-elm.logo {
+header .menu-elm .logo {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -450,37 +450,37 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm.logo {
+  header .menu-elm .logo {
     padding: 0 20px;
   }
 }
 
-.logo .img {
+header .menu-elm .logo .img {
   width: 116px;
   height: 39px;
 }
 
 @media (max-width: 1280px) {
-  .logo .img {
+  header .menu-elm .logo .img {
     width: 87px;
     height: 29px;
   }
 }
 
-.logo .text {
+header .menu-elm .logo .text {
   margin-left: 20px;
   font-size: 11px;
   font-weight: 700;
 }
 
 @media (max-width: 1280px) {
-  .logo .text {
+  header .menu-elm .logo .text {
     margin-left: 16px;
   }
 }
 
 @media (max-width: 1280px) {
-  .menu-btn {
+  header .menu-elm .menu-btn {
     width: 87px;
     height: 87px;
     margin-left: auto;
@@ -492,12 +492,12 @@ main {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .menu-btn .line {
+  header .menu-elm .menu-btn .line {
     width: 22px;
     height: 16px;
     position: relative;
   }
-  .menu-btn .line-item {
+  header .menu-elm .menu-btn .line-item {
     width: 22px;
     height: 3px;
     background-color: #fff;
@@ -505,28 +505,28 @@ main {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .line-item:nth-child(1) {
+  header .menu-elm .menu-btn .line-item:nth-child(1) {
     top: 0%;
   }
-  .line-item:nth-child(2) {
+  header .menu-elm .menu-btn .line-item:nth-child(2) {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .line-item:nth-child(3) {
+  header .menu-elm .menu-btn .line-item:nth-child(3) {
     top: calc(100% - 3px);
   }
 }
 
 @media (max-width: 1024px) {
-  .menu-elm .menu-btn {
+  header .menu-elm .menu-btn {
     width: 60px;
     height: 60px;
   }
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav {
+  header .menu-elm nav {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     position: fixed;
@@ -540,7 +540,7 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .menu-elm nav {
+  header .menu-elm nav {
     top: 60px;
     height: calc(100vh - 60px);
     -webkit-box-orient: vertical;
@@ -550,7 +550,7 @@ main {
   }
 }
 
-.menu-elm nav a {
+header .menu-elm nav a {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -569,7 +569,7 @@ main {
   transition: all 0.3s;
 }
 
-.menu-elm nav a.is-current::before {
+header .menu-elm nav a.is-current::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -582,13 +582,13 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav a {
+  header .menu-elm nav a {
     color: #fff;
     padding: 19px 40px;
     margin-left: 20px;
   }
-  .menu-elm nav a::before,
-  .menu-elm nav a.is-current::before {
+  header .menu-elm nav a::before,
+  header .menu-elm nav a.is-current::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -601,19 +601,19 @@ main {
   }
 }
 
-.menu-elm nav a:hover {
+header .menu-elm nav a:hover {
   color: #2abc8f;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav a:hover {
+  header .menu-elm nav a:hover {
     color: #fff;
   }
 }
 
-.menu-elm nav a.link-entry {
+header .menu-elm nav a.link-entry {
   font-size: 19px;
   background-color: #2abc8f;
   color: #fff;
@@ -622,7 +622,7 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav a.link-entry {
+  header .menu-elm nav a.link-entry {
     width: 200px;
     text-align: center;
     background-color: #fff;
@@ -634,7 +634,7 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .menu-elm nav a.link-entry {
+  header .menu-elm nav a.link-entry {
     width: 300px;
     padding: 32px 0;
     padding-right: 20px;
@@ -643,7 +643,7 @@ main {
   }
 }
 
-.menu-elm nav a.link-entry::before {
+header .menu-elm nav a.link-entry::before {
   content: "";
   position: absolute;
   top: 49.5%;
@@ -657,7 +657,7 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav a.link-entry::before {
+  header .menu-elm nav a.link-entry::before {
     left: auto;
     position: static;
     -webkit-transform: translateY(-20%);
@@ -669,7 +669,7 @@ main {
   }
 }
 
-.menu-elm nav a.link-entry::after {
+header .menu-elm nav a.link-entry::after {
   content: "";
   position: absolute;
   top: 49.5%;
@@ -686,7 +686,7 @@ main {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm nav a.link-entry::after {
+  header .menu-elm nav a.link-entry::after {
     right: 26px;
     width: 16px;
     height: 16px;
@@ -701,34 +701,34 @@ header .menu-elm nav a.link-entry:hover::after {
 }
 
 @media (max-width: 1280px) {
-  .menu-elm.is-open {
+  header .menu-elm.is-open {
     background-color: #fff;
   }
-  .menu-elm.is-open .menu-btn .line .line-item {
+  header .menu-elm.is-open .menu-btn .line .line-item {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .menu-elm.is-open .menu-btn .line .line-item:nth-child(1) {
+  header .menu-elm.is-open .menu-btn .line .line-item:nth-child(1) {
     top: 50%;
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
   }
-  .menu-elm.is-open .menu-btn .line .line-item:nth-child(2) {
+  header .menu-elm.is-open .menu-btn .line .line-item:nth-child(2) {
     opacity: 0;
   }
-  .menu-elm.is-open .menu-btn .line .line-item:nth-child(3) {
+  header .menu-elm.is-open .menu-btn .line .line-item:nth-child(3) {
     top: 50%;
     -webkit-transform: translateY(-50%) rotate(-45deg);
     transform: translateY(-50%) rotate(-45deg);
   }
-  .menu-elm.is-open nav {
+  header .menu-elm.is-open nav {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
     left: 0;
   }
 }
 
-.mark-elm .mark-item {
+header .mark-elm .mark-item {
   position: fixed;
   z-index: 1000;
   top: 50vh;
@@ -742,18 +742,18 @@ header .menu-elm nav a.link-entry:hover::after {
 }
 
 @media (max-width: 1280px) {
-  .mark-elm .mark-item {
+  header .mark-elm .mark-item {
     display: none;
   }
 }
 
-.mark-elm .mark-item:nth-child(1) {
+header .mark-elm .mark-item:nth-child(1) {
   -webkit-transform: rotate(-90deg) translateY(-50%);
   transform: rotate(-90deg) translateY(-50%);
   left: -1.5em;
 }
 
-.mark-elm .mark-item:nth-child(2) {
+header .mark-elm .mark-item:nth-child(2) {
   -webkit-transform: rotate(90deg) translateY(-50%);
   transform: rotate(90deg) translateY(-50%);
   right: -1.5em;
