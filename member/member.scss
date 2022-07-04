@@ -221,13 +221,13 @@
   margin-top: 100px;
 }
 
-.question h3 {
+h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.question h3 .num {
+h3 .num {
   width: 98px;
   font-size: 54px;
   font-family: "Rajdhani", sans-serif;
@@ -235,18 +235,18 @@
 }
 
 @media (max-width: 768px) {
-  .question h3 .num {
+  h3 .num {
     width: 57px;
     line-height: 51px;
     font-size: 40px;
   }
 }
 
-.question h3 .num::first-letter {
+h3 .num::first-letter {
   color: #2abc8f;
 }
 
-.question h3 .text {
+h3 .text {
   position: relative;
   font-size: 25px;
   font-weight: 700;
@@ -254,14 +254,14 @@
 }
 
 @media (max-width: 768px) {
-  .question h3 .text {
+  h3.text {
     font-size: 22px;
     line-height: 32px;
     padding-left: 23px;
   }
 }
 
-.question h3 .text::before {
+h3 .text::before {
   content: "";
   position: absolute;
   top: 55%;
