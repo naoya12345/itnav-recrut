@@ -86,7 +86,7 @@
   overflow: visible;
 }
 
-.bg-slide .group img {
+.group img {
   width: 100%;
   height: 830px;
   -o-object-fit: cover;
@@ -94,12 +94,12 @@
 }
 
 @media (max-width: 768px) {
-  .bg-slide .group img {
+  .group img {
     height: 630px;
   }
 }
 
-.bg-slide .swiper-pagination {
+.swiper-pagination {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -115,7 +115,7 @@
   color: #222;
 }
 
-.bg-slide .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   width: auto;
   height: auto;
   font-family: "Rajdhani", sans-serif;
@@ -127,12 +127,12 @@
 }
 
 @media (max-width: 768px) {
-  .bg-slide .swiper-pagination-bullet {
+  .swiper-pagination-bullet {
     display: none;
   }
 }
 
-.bg-slide .swiper-pagination-bullet::before {
+.swiper-pagination-bullet::before {
   content: "";
   width: 9px;
   height: 9px;
@@ -144,13 +144,13 @@
   transition: all 0.3s;
 }
 
-.bg-slide .swiper-pagination-bullet-active::before {
+.swiper-pagination-bullet-active::before {
   background-color: #2abc8f;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.bg-slide .swiper-pagination-bullet:not(:first-child) {
+.swiper-pagination-bullet:not(:first-child) {
   margin-left: 16px;
 }
 
@@ -495,7 +495,7 @@
 }
 
 @media (max-width: 768px) {
-  .member-group .member .about {
+  .member-group .about {
     width: 277px;
     top: -55px;
     padding: 20px 16px 0 3px;
