@@ -1308,7 +1308,7 @@ main {
   }
 }
 
-section .see-more {
+.see-more {
   position: relative;
   display: block;
   width: 250px;
@@ -1321,12 +1321,12 @@ section .see-more {
 }
 
 @media (max-width: 768px) {
-  section .see-more {
+  .see-more {
     width: 231px;
   }
 }
 
-section .see-more::before {
+.see-more::before {
   content: "";
   display: inline-block;
   width: 9px;
@@ -1335,7 +1335,7 @@ section .see-more::before {
   margin-right: 10px;
 }
 
-section .see-more::after {
+.see-more::after {
   content: "";
   position: absolute;
   top: 50%;
