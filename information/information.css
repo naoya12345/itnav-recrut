@@ -1114,13 +1114,6 @@ main {
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .flow {
-    margin-top: 82px;
-    margin-bottom: 204px;
-  }
-}
-
 .flow::before {
   top: -314px;
   right: 0;
@@ -1132,18 +1125,25 @@ main {
   z-index: -1;
 }
 
+.flow .pane {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .flow {
+    margin-top: 82px;
+    margin-bottom: 204px;
+  }
+}
+
 @media (max-width: 768px) {
   .flow::before {
     top: -190px;
     width: 78%;
     height: calc(100% + 307px);
   }
-}
-
-.flow .pane {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -1170,12 +1170,6 @@ main {
   margin-top: 130px;
 }
 
-@media (max-width: 768px) {
-  .content:not(:first-child) {
-    margin-top: 116px;
-  }
-}
-
 .content h3 {
   color: #2abc8f;
   font-size: 20px;
@@ -1188,12 +1182,6 @@ main {
   margin-top: 45px;
   list-style: none;
   counter-reset: listNum;
-}
-
-@media (max-width: 768px) {
-  .content ol {
-    font-size: 16px;
-  }
 }
 
 .content ol li {
@@ -1243,6 +1231,18 @@ main {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .content:not(:first-child) {
+    margin-top: 116px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content ol {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {

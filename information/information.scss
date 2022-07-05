@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 @import "../index";
+
 .pane {
   margin-top: 100px;
 }
@@ -47,9 +49,10 @@
   .entry-link {
     width: calc(100% - (20px * 2));
     font-size: 25px;
-  }
-  .entry-link .ja {
-    font-size: 19px;
+
+    .ja {
+      font-size: 19px;
+    }
   }
 }
 
@@ -61,6 +64,23 @@
   margin-top: 160px;
   margin-bottom: 400px;
   position: relative;
+
+  &::before {
+    top: -314px;
+    right: 0;
+    width: 44%;
+    height: calc(100% + 430px);
+    content: "";
+    position: absolute;
+    background-color: rgba(42, 188, 143, 0.07);
+    z-index: -1;
+  }
+
+  .pane {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 768px) {
@@ -70,29 +90,12 @@
   }
 }
 
-.flow::before {
-  top: -314px;
-  right: 0;
-  width: 44%;
-  height: calc(100% + 430px);
-  content: "";
-  position: absolute;
-  background-color: rgba(42, 188, 143, 0.07);
-  z-index: -1;
-}
-
 @media (max-width: 768px) {
   .flow::before {
     top: -190px;
     width: 78%;
     height: calc(100% + 307px);
   }
-}
-
-.flow .pane {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -114,8 +117,74 @@
     margin-top: 55px;
   }
 }
-.content:not(:first-child) {
-  margin-top: 130px;
+
+.content {
+  &:not(:first-child) {
+    margin-top: 130px;
+  }
+
+  h3 {
+    color: #2abc8f;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  ol {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 45px;
+    list-style: none;
+    counter-reset: listNum;
+
+    li {
+      position: relative;
+      padding-top: 12px;
+      padding-left: 66px;
+
+      &::before {
+        counter-increment: listNum;
+        content: counter(listNum);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background-color: #2abc8f;
+        color: #fff;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        border-radius: 1000px;
+      }
+
+      &:not(:last-child) {
+        height: 122px;
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50px;
+          left: 18px;
+          width: 15px;
+          height: 58px;
+          background-image: url(/img/flow-arrow.png);
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -124,73 +193,10 @@
   }
 }
 
-.content h3 {
-  color: #2abc8f;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.content ol {
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 45px;
-  list-style: none;
-  counter-reset: listNum;
-}
-
 @media (max-width: 768px) {
   .content ol {
     font-size: 16px;
   }
-}
-
-.content ol li {
-  position: relative;
-  padding-top: 12px;
-  padding-left: 66px;
-}
-
-.content ol li::before {
-  counter-increment: listNum;
-  content: counter(listNum);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background-color: #2abc8f;
-  color: #fff;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 1000px;
-}
-
-.content ol li:not(:last-child) {
-  height: 122px;
-}
-
-.content ol li:not(:last-child)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50px;
-  left: 18px;
-  width: 15px;
-  height: 58px;
-  background-image: url(/img/flow-arrow.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
