@@ -1057,13 +1057,6 @@ main {
   margin-bottom: 450px;
 }
 
-@media (max-width: 768px) {
-  .good-point {
-    margin-top: 55px;
-    margin-bottom: 270px;
-  }
-}
-
 .good-point::before {
   content: "";
   position: absolute;
@@ -1074,6 +1067,13 @@ main {
   height: 100%;
   background-color: rgba(42, 188, 143, 0.07);
   padding-bottom: 140px;
+}
+
+@media (max-width: 768px) {
+  .good-point {
+    margin-top: 55px;
+    margin-bottom: 270px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1117,22 +1117,8 @@ main {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
-  .pane ul li::before {
-    width: 124px;
-    height: 108px;
-    bottom: -10px;
-  }
-}
-
 .pane ul li:not(:first-child) {
   margin-top: 92px;
-}
-
-@media (max-width: 768px) {
-  .pane ul li:not(:first-child) {
-    margin-top: 45px;
-  }
 }
 
 .pane ul li:nth-child(odd) {
@@ -1141,20 +1127,8 @@ main {
   margin-left: auto;
 }
 
-@media (max-width: 768px) {
-  .pane ul li:nth-child(odd) {
-    padding-left: 105px;
-  }
-}
-
 .pane ul li:nth-child(odd)::before {
   left: -50px;
-}
-
-@media (max-width: 768px) {
-  .pane ul li:nth-child(odd)::before {
-    left: -25px;
-  }
 }
 
 .pane ul li:nth-child(even) {
@@ -1162,20 +1136,8 @@ main {
   padding-right: 160px;
 }
 
-@media (max-width: 768px) {
-  .pane ul li:nth-child(even) {
-    padding-right: 105px;
-  }
-}
-
 .pane ul li:nth-child(even)::before {
   right: -50px;
-}
-
-@media (max-width: 768px) {
-  .pane ul li:nth-child(even)::before {
-    right: -25px;
-  }
 }
 
 .pane ul li:nth-child(4n + 1)::before {
@@ -1192,5 +1154,43 @@ main {
 
 .pane ul li:nth-child(4n + 4)::before {
   background-image: url("/img/goodpoint-4.png");
+}
+
+@media (max-width: 768px) {
+  .pane ul li::before {
+    width: 124px;
+    height: 108px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane ul li:not(:first-child) {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane ul li:nth-child(odd) {
+    padding-left: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane ul li:nth-child(odd)::before {
+    left: -25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane ul li:nth-child(even) {
+    padding-right: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane ul li:nth-child(even)::before {
+    right: -25px;
+  }
 }
 /*# sourceMappingURL=goodpoint.css.map */

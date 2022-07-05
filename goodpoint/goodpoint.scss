@@ -1,9 +1,23 @@
 @charset "UTF-8";
+
 @import "../index";
+
 .good-point {
   margin-top: 116px;
   position: relative;
   margin-bottom: 450px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    z-index: -1;
+    width: 46%;
+    height: 100%;
+    background-color: rgba(42, 188, 143, 0.07);
+    padding-bottom: 140px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -11,18 +25,6 @@
     margin-top: 55px;
     margin-bottom: 270px;
   }
-}
-
-.good-point::before {
-  content: "";
-  position: absolute;
-  top: 72px;
-  right: 0px;
-  z-index: -1;
-  width: 46%;
-  height: 100%;
-  background-color: rgba(42, 188, 143, 0.07);
-  padding-bottom: 140px;
 }
 
 @media (max-width: 768px) {
@@ -55,15 +57,56 @@
   }
 }
 
-.pane ul li::before {
-  content: "";
-  position: absolute;
-  bottom: -26px;
-  width: 230px;
-  height: 200px;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+.pane ul li {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    width: 230px;
+    height: 200px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &:not(:first-child) {
+    margin-top: 92px;
+  }
+
+  &:nth-child(odd) {
+    border-top-left-radius: 0;
+    padding-left: 160px;
+    margin-left: auto;
+
+    &::before {
+      left: -50px;
+    }
+  }
+
+  &:nth-child(even) {
+    border-top-right-radius: 0;
+    padding-right: 160px;
+
+    &::before {
+      right: -50px;
+    }
+  }
+
+  &:nth-child(4n + 1)::before {
+    background-image: url("/img/goodpoint-1.png");
+  }
+
+  &:nth-child(4n + 2)::before {
+    background-image: url("/img/goodpoint-2.png");
+  }
+
+  &:nth-child(4n + 3)::before {
+    background-image: url("/img/goodpoint-3.png");
+  }
+
+  &:nth-child(4n + 4)::before {
+    background-image: url("/img/goodpoint-4.png");
+  }
 }
 
 @media (max-width: 768px) {
@@ -74,20 +117,10 @@
   }
 }
 
-.pane ul li:not(:first-child) {
-  margin-top: 92px;
-}
-
 @media (max-width: 768px) {
   .pane ul li:not(:first-child) {
     margin-top: 45px;
   }
-}
-
-.pane ul li:nth-child(odd) {
-  border-top-left-radius: 0;
-  padding-left: 160px;
-  margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -96,19 +129,10 @@
   }
 }
 
-.pane ul li:nth-child(odd)::before {
-  left: -50px;
-}
-
 @media (max-width: 768px) {
   .pane ul li:nth-child(odd)::before {
     left: -25px;
   }
-}
-
-.pane ul li:nth-child(even) {
-  border-top-right-radius: 0;
-  padding-right: 160px;
 }
 
 @media (max-width: 768px) {
@@ -117,28 +141,8 @@
   }
 }
 
-.pane ul li:nth-child(even)::before {
-  right: -50px;
-}
-
 @media (max-width: 768px) {
   .pane ul li:nth-child(even)::before {
     right: -25px;
   }
-}
-
-.pane ul li:nth-child(4n + 1)::before {
-  background-image: url("/img/goodpoint-1.png");
-}
-
-.pane ul li:nth-child(4n + 2)::before {
-  background-image: url("/img/goodpoint-2.png");
-}
-
-.pane ul li:nth-child(4n + 3)::before {
-  background-image: url("/img/goodpoint-3.png");
-}
-
-.pane ul li:nth-child(4n + 4)::before {
-  background-image: url("/img/goodpoint-4.png");
 }
