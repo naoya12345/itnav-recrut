@@ -1069,13 +1069,6 @@ main {
   line-height: 45px;
 }
 
-@media (max-width: 768px) {
-  .pane table {
-    font-size: 16px;
-    line-height: 28px;
-  }
-}
-
 .pane table tr:not(:first-child) {
   border-top: 1px solid #d3d3d3;
 }
@@ -1085,24 +1078,11 @@ main {
   padding: 16px 0;
 }
 
-@media (max-width: 768px) {
-  .pane table tr th,
-  .pane table tr td {
-    padding: 22px 0;
-  }
-}
-
 .pane table tr th {
   width: 31%;
   white-space: nowrap;
   text-align: left;
   font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  .pane table tr th {
-    padding-right: 10px;
-  }
 }
 
 .pane table tr td {
@@ -1112,6 +1092,26 @@ main {
 .pane table tr td span {
   font-weight: 400;
   color: #2abc8f;
+}
+
+@media (max-width: 768px) {
+  .pane table {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane table tr th,
+  .pane table tr td {
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pane table tr th {
+    padding-right: 10px;
+  }
 }
 
 .entry-link {

@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 @import "../index";
+
 .detail {
   margin-top: 77px;
   margin-bottom: 190px;
@@ -16,6 +18,33 @@
   width: 100%;
   font-size: 18px;
   line-height: 45px;
+
+  tr {
+    &:not(:first-child) {
+      border-top: 1px solid #d3d3d3;
+    }
+
+    th,
+    td {
+      padding: 16px 0;
+    }
+
+    th {
+      width: 31%;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    td {
+      font-weight: 400;
+
+      span {
+        font-weight: 400;
+        color: #2abc8f;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -25,42 +54,19 @@
   }
 }
 
-.pane table tr:not(:first-child) {
-  border-top: 1px solid #d3d3d3;
-}
-
-.pane table tr th,
-.pane table tr td {
-  padding: 16px 0;
-}
-
 @media (max-width: 768px) {
-  .pane table tr th,
-  .pane table tr td {
-    padding: 22px 0;
+  .pane table tr {
+    th,
+    td {
+      padding: 22px 0;
+    }
   }
-}
-
-.pane table tr th {
-  width: 31%;
-  white-space: nowrap;
-  text-align: left;
-  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .pane table tr th {
     padding-right: 10px;
   }
-}
-
-.pane table tr td {
-  font-weight: 400;
-}
-
-.pane table tr td span {
-  font-weight: 400;
-  color: #2abc8f;
 }
 
 .entry-link {
