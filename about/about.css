@@ -1072,13 +1072,6 @@ main {
   margin-top: 110px;
 }
 
-@media (max-width: 768px) {
-  .mvv {
-    padding: 42px 0;
-    margin-top: 58px;
-  }
-}
-
 .mvv::before {
   top: 0;
   right: 0;
@@ -1090,16 +1083,31 @@ main {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .mvv::before {
-    width: 78%;
-  }
-}
-
 .mvv .pane {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.mvv .pane:not(:first-child) {
+  margin-top: 115px;
+}
+
+.mvv .pane-text {
+  width: 680px;
+}
+
+@media (max-width: 768px) {
+  .mvv {
+    padding: 42px 0;
+    margin-top: 58px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mvv::before {
+    width: 78%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1109,14 +1117,6 @@ main {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-}
-
-.mvv .pane:not(:first-child) {
-  margin-top: 115px;
-}
-
-.mvv .pane-text {
-  width: 680px;
 }
 
 @media (max-width: 768px) {
@@ -1206,13 +1206,6 @@ main {
   margin-top: 40px;
 }
 
-@media (max-width: 768px) {
-  .message-title .profile-img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .message-title .profile-name {
   text-align: center;
   margin-top: 24px;
@@ -1222,6 +1215,13 @@ main {
 .message-title .profile-name .kana {
   font-size: 14px;
   margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .message-title .profile-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .message-text {
@@ -1262,16 +1262,6 @@ main {
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
-  .business-content {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 16px;
-    margin-top: 32px;
-  }
-}
-
 .business-content:not(:first-child) {
   margin-top: 80px;
 }
@@ -1287,12 +1277,6 @@ main {
   line-height: 45px;
 }
 
-@media (max-width: 768px) {
-  .business-content p {
-    line-height: 28px;
-  }
-}
-
 .business-content p.example::before {
   content: "例）";
   display: block;
@@ -1303,13 +1287,29 @@ main {
   margin-top: 2em;
 }
 
+.business-content p.tool span {
+  color: #2abc8f;
+}
+
+@media (max-width: 768px) {
+  .business-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .business-content p {
+    line-height: 28px;
+  }
+}
+
 @media (max-width: 768px) {
   .business-content p.tool {
     margin-top: 1.3em;
   }
-}
-
-.business-content p.tool span {
-  color: #2abc8f;
 }
 /*# sourceMappingURL=about.css.map */
