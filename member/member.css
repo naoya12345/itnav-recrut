@@ -1060,10 +1060,13 @@ main {
   }
 }
 
+.tab {
+  text-align: center;
+}
+
 .tab-switch {
   cursor: pointer;
   color: #9b9b9b;
-  text-align: center;
   font-size: 18px;
   font-weight: 500;
   width: 100%;
@@ -1318,18 +1321,17 @@ h3 .text::before {
   }
 }
 
-@media (max-width: 768px) {
-  h3 .text {
-    font-size: 22px;
-    line-height: 32px;
-    padding-left: 23px;
-  }
-  .question p {
-    font-size: 18px;
-    line-height: 45px;
-    padding-left: 98px;
-    margin-top: 24px;
-  }
+h3 .text {
+  font-size: 22px;
+  line-height: 32px;
+  padding-left: 23px;
+}
+
+.question p {
+  font-size: 18px;
+  line-height: 45px;
+  padding-left: 98px;
+  margin-top: 24px;
 }
 
 @media (max-width: 768px) {
