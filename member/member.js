@@ -2,7 +2,12 @@
 const tab = document.getElementById("tab");
 tab.onclick = () => {
   const target = document.getElementsByClassName("tab-switch");
-  Array.from(target).forEach((item) => item.classList.toggle("is-active"));
+
+  const sections = document.getElementsByClassName("content-section");
+
+  [...target, ...sections].forEach((item) =>
+    item.classList.toggle("is-active")
+  );
 };
 
 //header
