@@ -198,7 +198,7 @@
 }
 
 @media (max-width: 768px) {
-  .entry .pane .form-chunk {
+  .form-chunk {
     label.is-required::after,
     p.label.is-required::after {
       margin-left: 14px;
@@ -377,22 +377,19 @@
     margin-top: 62px;
     margin-bottom: 60px;
   }
+  .form {
+    width: calc(100% - (20px * 2));
+  }
 }
 
 @media (max-width: 768px) {
   .form-confirm .form {
     width: calc(100% - (20px * 2));
   }
-}
-
-@media (max-width: 768px) {
-  .form .btn-wrapper {
+  .btn-wrapper {
     margin-top: 62px;
   }
-}
-
-@media (max-width: 768px) {
-  .form .btn-wrapper input {
+  .btn-wrapper input {
     height: 78px;
     font-size: 19px;
   }
@@ -402,6 +399,10 @@
   .complete-modal .message {
     font-size: 16px;
   }
+  .back-top {
+    font-size: 19px;
+    line-height: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -409,10 +410,7 @@
     font-size: 19px;
     line-height: 60px;
   }
-}
-
-@media (max-width: 768px) {
-  .complete-modal .notice {
+  .notice {
     font-size: 12px;
   }
 }
