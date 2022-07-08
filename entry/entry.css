@@ -1055,29 +1055,29 @@ main {
   overflow-x: hidden;
 }
 
-.entry-page .entry {
+.entry {
   margin-top: 108px;
   margin-bottom: 172px;
 }
 
-.entry-page .entry .pane {
+.entry .pane {
   width: 770px;
 }
 
-.entry-page .entry .pane .form-chunk:not(:first-child) {
+.entry .pane .form-chunk:not(:first-child) {
   margin-top: 45px;
 }
 
-.entry-page .entry .pane .form-chunk label,
-.entry-page .entry .pane .form-chunk p.label {
+.entry .pane .form-chunk label,
+.entry .pane .form-chunk p.label {
   padding-bottom: 31px;
   display: block;
   font-size: 18px;
   font-weight: 400;
 }
 
-.entry-page .entry .pane .form-chunk label.is-required::after,
-.entry-page .entry .pane .form-chunk p.label.is-required::after {
+.entry .pane .form-chunk label.is-required::after,
+.entry .pane .form-chunk p.label.is-required::after {
   content: "必須";
   background-color: #f76464;
   color: #fff;
@@ -1087,31 +1087,31 @@ main {
   margin-left: 10px;
 }
 
-.entry-page .entry .pane .form-chunk label:not(:first-child),
-.entry-page .entry .pane .form-chunk p.label:not(:first-child) {
+.entry .pane .form-chunk label:not(:first-child),
+.entry .pane .form-chunk p.label:not(:first-child) {
   margin-bottom: 45px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group {
+.entry .pane .form-chunk .check-group {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: -25px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item {
+.entry .pane .form-chunk .check-group-item {
   margin-top: 25px;
   margin-right: 25px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item input[type="checkbox"] {
+.entry .pane .form-chunk .check-group-item input[type="checkbox"] {
   display: none;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item input[type="checkbox"]:checked + label::before {
+.entry .pane .form-chunk .check-group-item input[type="checkbox"]:checked + label::before {
   background-color: #2abc8f;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label {
+.entry .pane .form-chunk .check-group-item label {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,7 +1123,7 @@ main {
   margin-bottom: 0;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label::before {
+.entry .pane .form-chunk .check-group-item label::before {
   content: "";
   position: relative;
   display: block;
@@ -1134,7 +1134,7 @@ main {
   margin-right: 8px;
 }
 
-.entry-page .entry .pane .form-chunk .check-group-item label::after {
+.entry .pane .form-chunk .check-group-item label::after {
   content: "";
   background-image: url("/img/entry-check-item.png");
   background-repeat: no-repeat;
@@ -1146,7 +1146,7 @@ main {
   left: 6px;
 }
 
-.entry-page .entry .pane .form-chunk input[type="text"], .entry-page .entry .pane .form-chunk input[type="email"] {
+.entry .pane .form-chunk input[type="text"], .entry .pane .form-chunk input[type="email"] {
   width: 100%;
   height: 50px;
   background-color: #efefef;
@@ -1156,7 +1156,7 @@ main {
   border-radius: 3px;
 }
 
-.entry-page .entry .pane .form-chunk .drop-down {
+.entry .pane .form-chunk .drop-down {
   font-size: 18px;
   font-weight: 400;
   width: 222px;
@@ -1176,7 +1176,7 @@ main {
   background-position: right 18px top 19px;
 }
 
-.entry-page .entry .pane .form-chunk textarea {
+.entry .pane .form-chunk textarea {
   border-radius: 3px;
   width: 100%;
   height: 267px;
@@ -1188,11 +1188,11 @@ main {
   resize: none;
 }
 
-.entry-page .entry .pane .schedule-content {
+.entry .pane .schedule-content {
   margin-top: 45px;
 }
 
-.entry-page .entry .entry-submit {
+.entry .entry-submit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1202,7 +1202,7 @@ main {
   margin-top: 80px;
 }
 
-.entry-page .entry .entry-submit input[type="submit"] {
+.entry .entry-submit input[type="submit"] {
   display: block;
   width: 634px;
   font-size: 22px;
